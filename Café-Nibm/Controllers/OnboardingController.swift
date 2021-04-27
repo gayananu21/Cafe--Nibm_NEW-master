@@ -66,7 +66,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
        // slide1.imageView.image = UIImage(named: "ic_onboarding_1")
         slide1.labelTitle.text = "WELCOME"
-        slide1.labelDesc.text = "Welcome to Nibm Cafe where you'll find everything you want to eat! Your presence is our motivation to do better! Our heartiest welcome goes to you."
+        slide1.labelDesc.text = "Dear Manager Welcome to Nibm Cafe where you'll find the best selling experience!. Your presence is our motivation to do better! Our heartiest welcome goes to you."
         slide1.loginButton.alpha = 0
         
         
@@ -125,9 +125,9 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
        // slide3.imageView.image = UIImage(named: "ic_onboarding_3")
-        slide3.labelTitle.text = "PLACE YOUR ORDER"
+        slide3.labelTitle.text = "FIND NEW ORDERS"
         slide3.labelTitle.textColor = .systemPurple
-        slide3.labelDesc.text = "You are one step away. Hurry up and place your order. We will notify you soon when foods are ready."
+        slide3.labelDesc.text = "You are one step away. Hurry up and ACCEPT your order. We will notify you soon when customer are arriving."
         slide3.loginButton.alpha = 0
         
         self.lottieView2.alpha = 1
@@ -153,9 +153,9 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         
         let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
        // slide4.imageView.image = UIImage(named: "ic_onboarding_4")
-        slide4.labelTitle.text = "JOIN WITH US"
+        slide4.labelTitle.text = "ADD NEW RECEIPIES"
         slide4.labelTitle.textColor = .brown
-        slide4.labelDesc.text = "We have best receipes for any food. Join with us taste best food for best price."
+        slide4.labelDesc.text = "Try different be different. Add new Recepies to your loving customers."
         slide4.loginButton.alpha = 1
        
         

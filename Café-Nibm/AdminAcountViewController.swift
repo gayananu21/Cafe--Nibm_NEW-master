@@ -358,8 +358,58 @@ class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableV
         
         
     }
+    
+     @IBAction func btnTakeScreenShot(_ sender: UIButton) {
+          self.takeScreenshot()
+        
+        let alert = UIAlertController(title: "Success", message: "Orders History Printed Successfully", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                           
+                                                    
+
+                                      }))
+                                                          self.present(alert, animated: true, completion: nil)
+      }
+
+      open func takeScreenshot(_ shouldSave: Bool = true) -> UIImage? {
+          print("takeScreenshot")
+          var screenshotImage :UIImage?
+          let layer = UIApplication.shared.keyWindow!.layer
+          let scale = UIScreen.main.scale
+          UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+          guard let context = UIGraphicsGetCurrentContext() else {return nil}
+          layer.render(in:context)
+          screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
+          UIGraphicsEndImageContext()
+          if let image = screenshotImage, shouldSave {
+              UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+          }
+          return screenshotImage
+      }
        
      
+    @IBAction func onSignOut(_ sender: Any) {
+        
+        let alert = UIAlertController(title: "Sign Out", message: "Are you sure you want to sign out", preferredStyle: .alert)
+                                                                 alert.addAction(UIAlertAction(title: "Sign Out", style: UIAlertAction.Style.destructive, handler: { action in
+                                                                   
+                                                                   do { try Auth.auth().signOut() }
+                                                                            catch { print("already logged out") }
+                                                                  
+                                                                  let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                                                         let vc = storyboard.instantiateViewController(withIdentifier: "FIRST_VIEW")
+                                                                          vc.modalPresentationStyle = .fullScreen
+                                                                         vc.modalTransitionStyle = .crossDissolve
+                                                                         self.present(vc, animated: true)
+                                                                  
+                                                                 }))
+                                             alert.addAction(UIAlertAction(title: "Cancel ", style: .default, handler: { action in
+
+                                              
+
+                                             }))
+                                                                 self.present(alert, animated: true, completion: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

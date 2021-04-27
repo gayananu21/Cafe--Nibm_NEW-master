@@ -11,11 +11,16 @@ import Firebase
 import Kingfisher
 import FirebaseAuth
 import CoreData
+import Lottie
 
 
 class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
     
-  
+    @IBOutlet weak var shimmerView: UIView!
+    @IBOutlet weak var scrollView1: UIScrollView!
+    @IBOutlet weak var scrollView12: UIScrollView!
+     let lottieView = AnimationView()
+    
      var appDelegate = UIApplication.shared.delegate as? AppDelegate
     
     @IBOutlet weak var topView1_Width: NSLayoutConstraint!
@@ -237,7 +242,7 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
         //configureTitleLabel()
                      configureStackView()
      
-       
+       loadingLottie()
        
        
         
@@ -269,6 +274,7 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
                           //if the reference have some values
                           if snapshot.childrenCount > 0 {
                               
+                            
                               //clearing the list
                               self.foodList.removeAll()
                               
@@ -298,71 +304,59 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
                                 
                                 
                               }
-                              
+                              self.shimmerView.alpha = 0
+                              self.lottieView.alpha = 0
+                              self.scrollView12.alpha = 1
+                              self.scrollView1.alpha = 1
+                               self.downTableview.alpha = 1
                               //reloading the tableview
                               self.downTableview.reloadData()
                           }
+                        
+                          else{
+                                                
+                        
+                                               }
+                        
+                        
+                        
+                        
                       })
-        
-        //getting a reference to the node artists
-        refCarts = Database.database().reference().child("addCart/\(self.user?.uid ?? "")");
-          
-          //observing the data changes
-               refCarts.observe(DataEventType.value, with: { (snapshot) in
-                   
-                   //if the reference have some values
-                   if snapshot.childrenCount > 0 {
-                     
-              //    self.emptyCartImage.alpha = 0
-                       
-                       //clearing the list
-                       self.cartList.removeAll()
-                        
-                       //iterating through all the values
-                       for carts in snapshot.children.allObjects as! [DataSnapshot] {
-                           //getting values
-                           let cartObject = carts.value as? [String: AnyObject]
-                           let cartItemPrice  = cartObject?["foodPrice"]
-                           let cartNoUnits  = cartObject?["noFoods"]
-                           let cartAmount = cartObject?["amount"]
-                           let cartFoodName = cartObject?["foodName"]
-                           let cartID = cartObject?["id"]
-                            
-                           
-                        
-                        
-                           //creating artist object with model and fetched values
-                         let cart = CartModel(itemPrice: cartItemPrice as! String?, noItems: cartNoUnits as! String?, amount: cartAmount as! String?, foodName: cartFoodName as! String?, cID: cartID as! String? )
-                           
-                           //appending it to list
-                           self.cartList.append(cart)
-                         
-                         
-                       }
-                       
-                       //reloading the tableview
-                     
-                   }
-                
-                   else {
-                    
-                }
-                 
-                
-                 
-                
-                 
-               })
-        
-        
-        
-       
-       
-        
-        
         
        
 
+    }
+    
+    func loadingLottie(){
+        
+                                                 self.lottieView.alpha = 1
+                                                 self.shimmerView.alpha = 1
+                                                 self.scrollView12.alpha = 0
+                                                 self.scrollView1.alpha = 0
+                                                 self.downTableview.alpha = 0
+                                                    self.lottieView.animation = Animation.named("Load")
+                                                         //let lottieView = AnimationView(animation: loadingAnimation)
+                                                             // 2. SECOND STEP (Adding and setup):
+                                                         self.shimmerView.addSubview(self.lottieView)
+                                                         self.lottieView.contentMode = .scaleAspectFit
+                                                         self.lottieView.loopMode = .autoReverse
+                                                         self.lottieView.play(toFrame: .infinity)
+                                                         
+                                                         
+                                                         
+                                                             // 3. THIRD STEP (LAYOUT PREFERENCES):
+                                                         self.lottieView.translatesAutoresizingMaskIntoConstraints = false
+                                                             NSLayoutConstraint.activate([
+                                                                 self.lottieView.leftAnchor.constraint(equalTo: self.shimmerView.leftAnchor),
+                                                                 self.lottieView.rightAnchor.constraint(equalTo: self.shimmerView.rightAnchor),
+                                                                 self.lottieView.topAnchor.constraint(equalTo: self.shimmerView.topAnchor),
+                                                                 self.lottieView.bottomAnchor.constraint(equalTo: self.shimmerView.bottomAnchor)
+                                                             ])
+                                                         
+                                                         
+                                                         self.shimmerView.alpha = 1
+                                 
+                                                         self.downTableview.reloadData()
     }
     
     

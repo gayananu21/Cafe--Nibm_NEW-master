@@ -74,6 +74,10 @@
 		9B75A46725E8091700F20165 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75A46625E8091700F20165 /* ProfileViewController.swift */; };
 		9B75A46925E8BA2100F20165 /* ProfileUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75A46825E8BA2100F20165 /* ProfileUITableViewCell.swift */; };
 		9B75A46B25E8C1A900F20165 /* Profile_1_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75A46A25E8C1A900F20165 /* Profile_1_TableViewCell.swift */; };
+		9B99427526389F61005558C5 /* nonew.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B99427326389F60005558C5 /* nonew.json */; };
+		9B99427626389F61005558C5 /* cook.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B99427426389F60005558C5 /* cook.json */; };
+		9B9942782638B4D3005558C5 /* shimmer.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B9942772638B4D3005558C5 /* shimmer.json */; };
+		9B99427A2638BDBC005558C5 /* Load.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B9942792638BDBC005558C5 /* Load.json */; };
 		9B9ACB482611E406006998F8 /* Add_Photo_Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9ACB472611E406006998F8 /* Add_Photo_Instructions.swift */; };
 		9B9ACB4A2611E440006998F8 /* Add_Photo_Instructions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9ACB492611E43F006998F8 /* Add_Photo_Instructions.xib */; };
 		9B9BF52725E56BA2002F0B53 /* HomeCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9BF52625E56BA2002F0B53 /* HomeCartTableViewCell.swift */; };
@@ -204,6 +208,10 @@
 		9B75A46625E8091700F20165 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
 		9B75A46825E8BA2100F20165 /* ProfileUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUITableViewCell.swift; sourceTree = "<group>"; };
 		9B75A46A25E8C1A900F20165 /* Profile_1_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile_1_TableViewCell.swift; sourceTree = "<group>"; };
+		9B99427326389F60005558C5 /* nonew.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nonew.json; sourceTree = "<group>"; };
+		9B99427426389F60005558C5 /* cook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cook.json; sourceTree = "<group>"; };
+		9B9942772638B4D3005558C5 /* shimmer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shimmer.json; sourceTree = "<group>"; };
+		9B9942792638BDBC005558C5 /* Load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Load.json; sourceTree = "<group>"; };
 		9B9ACB472611E406006998F8 /* Add_Photo_Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_Photo_Instructions.swift; sourceTree = "<group>"; };
 		9B9ACB492611E43F006998F8 /* Add_Photo_Instructions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Add_Photo_Instructions.xib; sourceTree = "<group>"; };
 		9B9BF52625E56BA2002F0B53 /* HomeCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCartTableViewCell.swift; sourceTree = "<group>"; };
@@ -445,9 +453,13 @@
 		9BF556FD26088BDD0060092A /* AnimationAssests */ = {
 			isa = PBXGroup;
 			children = (
+				9B9942772638B4D3005558C5 /* shimmer.json */,
 				9BF557082608EF550060092A /* Star.json */,
+				9B9942792638BDBC005558C5 /* Load.json */,
 				9B3FDB7C2630AF6900ABD480 /* No Ready.json */,
 				9BF97F4B260F4E2200B9C1F4 /* Log.json */,
+				9B99427426389F60005558C5 /* cook.json */,
+				9B99427326389F60005558C5 /* nonew.json */,
 				9BF97F49260F4E2000B9C1F4 /* mob.json */,
 				9B3FDB6E26302FF000ABD480 /* Bell1.json */,
 				9B3FDB6C26302C5D00ABD480 /* Bell.json */,
@@ -637,10 +649,13 @@
 				9BF5571126091BF00060092A /* No_Network.json in Resources */,
 				9BF557092608EF560060092A /* Star.json in Resources */,
 				9BF97F48260F4E1000B9C1F4 /* montserrat_bold.otf in Resources */,
+				9B99427526389F61005558C5 /* nonew.json in Resources */,
 				9B3FDB6F26302FF000ABD480 /* Bell1.json in Resources */,
+				9B99427626389F61005558C5 /* cook.json in Resources */,
 				9B43BBCA25E36D8E0039D5E2 /* Main.storyboard in Resources */,
 				9B9ACB4A2611E440006998F8 /* Add_Photo_Instructions.xib in Resources */,
 				9B3FDB6D26302C5E00ABD480 /* Bell.json in Resources */,
+				9B9942782638B4D3005558C5 /* shimmer.json in Resources */,
 				9BF97F50260F4E2400B9C1F4 /* Res.json in Resources */,
 				9B368348261CD95D00457C84 /* Pen.json in Resources */,
 				9BF97F45260F4E1000B9C1F4 /* montserrat_light.otf in Resources */,
@@ -648,6 +663,7 @@
 				9BF97F3F260F4E0600B9C1F4 /* Slide.xib in Resources */,
 				9BF97F46260F4E1000B9C1F4 /* montserrat_regular.otf in Resources */,
 				9BF97F47260F4E1000B9C1F4 /* montserrat_medium.otf in Resources */,
+				9B99427A2638BDBC005558C5 /* Load.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
