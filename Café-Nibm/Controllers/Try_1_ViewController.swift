@@ -47,6 +47,7 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
     
     
     
+    
     //@IBOutlet weak var topTableView: UITableView!
     @IBOutlet weak var downTableview: UITableView!
     var topData : [String] = []
@@ -55,6 +56,7 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
     
     var refFoods: DatabaseReference!
     var refCarts: DatabaseReference!
+    var refGetOrderInfo: DatabaseReference!
     let user = Auth.auth().currentUser
     
     var updateCart: DatabaseReference!
@@ -240,10 +242,12 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
         super.viewDidLoad()
         
         //configureTitleLabel()
-                     configureStackView()
+        configureStackView()
      
        loadingLottie()
        
+        //getting a reference to the node artists
+        refGetOrderInfo = Database.database().reference().child("order status");
        
         
        
@@ -322,6 +326,193 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
                         
                         
                       })
+        
+                                                         //observing the data changes
+                                                        let query = refGetOrderInfo.queryOrdered(byChild: "status").queryEqual(toValue: "pending")
+                                                                      query.observe(DataEventType.value, with: { (snapshot) in
+                                                            
+                                                            //if the reference have some values
+                                                            if snapshot.childrenCount > 0 {
+                                                              
+                                                             //As we know that container is set up in the AppDelegates so we need to refer that container.
+                                                                    guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+                                                                    
+                                                                    //We need to create a context from this container
+                                                                    let managedContext = appDelegate.persistentContainer.viewContext
+                                                                    
+                                                                    //Now let’s create an entity and new user records.
+                                                                    let userEntity = NSEntityDescription.entity(forEntityName: "NewOrders", in: managedContext)!
+                                                                    
+                                                                    //final, we need to add some data to our newly created record for each keys using
+                                                                    //here adding 5 data with loop
+                                                                    
+                                                                   
+                                                                        
+                                                                        let user = NSManagedObject(entity: userEntity, insertInto: managedContext)
+                                                                        user.setValue("true", forKeyPath: "status")
+                                                                       
+                                                                    
+
+                                                                    //Now we have set all the values. The next step is to save them inside the Core Data
+                                                                    
+                                                                    do {
+                                                                        try managedContext.save()
+                                                                       
+                                                                    } catch let error as NSError {
+                                                                        print("Could not save. \(error), \(error.userInfo)")
+                                                                    }
+                                                              
+                                                       
+                                                                
+                                                            }
+                                                                        
+                                                            else{
+                                                                
+                           //As we know that container is set up in the AppDelegates so we need to refer that container.
+                            guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+                            
+                            //We need to create a context from this container
+                            let managedContext = appDelegate.persistentContainer.viewContext
+                            
+                            //Now let’s create an entity and new user records.
+                            let userEntity = NSEntityDescription.entity(forEntityName: "NewOrders", in: managedContext)!
+                            
+                            //final, we need to add some data to our newly created record for each keys using
+                            //here adding 5 data with loop
+                            
+                           
+                                
+                                let user = NSManagedObject(entity: userEntity, insertInto: managedContext)
+                                user.setValue("false", forKeyPath: "status")
+                               
+                            
+
+                            //Now we have set all the values. The next step is to save them inside the Core Data
+                            
+                            do {
+                                try managedContext.save()
+                               
+                            } catch let error as NSError {
+                                print("Could not save. \(error), \(error.userInfo)")
+                            }
+                                                                        }
+                                                          
+                                                          
+                                                         
+                                                          
+                                                        })
+        
+        
+        
+        
+        
+        
+        //observing the data changes
+                                                               let query_Ready = refGetOrderInfo.queryOrdered(byChild: "status").queryEqual(toValue: "ready")
+                                                                             query.observe(DataEventType.value, with: { (snapshot) in
+                                                                   
+                                                                   //if the reference have some values
+                                                                   if snapshot.childrenCount > 0 {
+                                                                    
+                                                                    
+
+                                                                         //iterating through all the values
+                                                                         for newOrders in snapshot.children.allObjects as! [DataSnapshot] {
+                                                                             //getting values
+                                                                            
+                                                                           
+                                                                            let cartObject = newOrders.value as? [String: AnyObject]
+                                                                            
+                                                                            let orderId  = cartObject?["orderId"]
+                                                                            
+                                                                              let customerName = cartObject?["name"]
+                                                                               let distance = cartObject?["distance"]
+                                                                             
+                                                                            let cusDistance = distance as! String
+                                                                
+                                                                 var cusDistanceDouble = Double()
+                                                                 
+                                                                            cusDistanceDouble = Double(cusDistance)!
+                                                                    
+                                                                if(cusDistanceDouble < 20){
+                                                                                
+                                                                                //As we know that container is set up in the AppDelegates so we need to refer that container.
+                                                                                                                                                          guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+                                                                                                                                                          
+                                                                                                                                                          //We need to create a context from this container
+                                                                                                                                                          let managedContext = appDelegate.persistentContainer.viewContext
+                                                                                                                                                          
+                                                                                                                                                          //Now let’s create an entity and new user records.
+                                                                                                                                                          let userEntity = NSEntityDescription.entity(forEntityName: "ArrivingStatus", in: managedContext)!
+                                                                                                                                                          
+                                                                                                                                                          //final, we need to add some data to our newly created record for each keys using
+                                                                                                                                                          //here adding 5 data with loop
+                                                                                                                                                          
+                                                                                                                                                         
+                                                                                                                                                              
+                                                                                                                                                              let user = NSManagedObject(entity: userEntity, insertInto: managedContext)
+                                                                                                                                                              user.setValue("true", forKeyPath: "status")
+                                                                                                                                                             
+                                                                                                                                                          
+
+                                                                                                                                                          //Now we have set all the values. The next step is to save them inside the Core Data
+                                                                                                                                                          
+                                                                                                                                                          do {
+                                                                                                                                                              try managedContext.save()
+                                                                                                                                                             
+                                                                                                                                                          } catch let error as NSError {
+                                                                                                                                                              print("Could not save. \(error), \(error.userInfo)")
+                                                                                                                                                          }
+                                                                                                                                                    
+                                                                                                                                             
+                                                                                                                                                      
+                                                                                                                                                  }
+                                                                                                                                                              
+                                                                                                                                                  else{
+                                                                                                                                                      
+                                                                                                                 //As we know that container is set up in the AppDelegates so we need to refer that container.
+                                                                                                                  guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+                                                                                                                  
+                                                                                                                  //We need to create a context from this container
+                                                                                                                  let managedContext = appDelegate.persistentContainer.viewContext
+                                                                                                                  
+                                                                                                                  //Now let’s create an entity and new user records.
+                                                                                                                  let userEntity = NSEntityDescription.entity(forEntityName: "ArrivingStatus", in: managedContext)!
+                                                                                                                  
+                                                                                                                  //final, we need to add some data to our newly created record for each keys using
+                                                                                                                  //here adding 5 data with loop
+                                                                                                                  
+                                                                                                                 
+                                                                                                                      
+                                                                                                                      let user = NSManagedObject(entity: userEntity, insertInto: managedContext)
+                                                                                                                      user.setValue("false", forKeyPath: "status")
+                                                                                                                     
+                                                                                                                  
+
+                                                                                                                  //Now we have set all the values. The next step is to save them inside the Core Data
+                                                                                                                  
+                                                                                                                  do {
+                                                                                                                      try managedContext.save()
+                                                                                                                     
+                                                                                                                  } catch let error as NSError {
+                                                                                                                      print("Could not save. \(error), \(error.userInfo)")
+                                                                                                                  }
+                                                                                
+                                                                }
+                                                                            
+                                                                          
+                                                                    
+                                                                           
+                                                                         }
+                                                                    
+                                                                     
+                                                                   
+                                                                               }
+                                                                 
+                                                                 
+                                                                
+                                                                 
+                                                               })
         
        
 

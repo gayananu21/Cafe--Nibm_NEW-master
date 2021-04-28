@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import CoreData
 import UserNotifications
+import FBSDKCoreKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -45,6 +46,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                        print("User has declined notifications")
                    }
                }
+        ApplicationDelegate.shared.application(
+                   application,
+                   didFinishLaunchingWithOptions: launchOptions
+               )
+
         
                 return true
             }
@@ -72,6 +78,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
        }
     
+    func application(
+           _ app: UIApplication,
+           open url: URL,
+           options: [UIApplication.OpenURLOptionsKey : Any] = [:]
+       ) -> Bool {
+
+           ApplicationDelegate.shared.application(
+               app,
+               open: url,
+               sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
+               annotation: options[UIApplication.OpenURLOptionsKey.annotation]
+           )
+    }
             
             func sethasAlreadyLaunched(){
                 hasAlreadyLaunched = true

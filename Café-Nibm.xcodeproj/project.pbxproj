@@ -16,6 +16,7 @@
 		9B1491342638718D00EEF105 /* HistoryOrderDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1491332638718D00EEF105 /* HistoryOrderDetailTableViewCell.swift */; };
 		9B149136263871CE00EEF105 /* HistoryOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B149135263871CE00EEF105 /* HistoryOrderDetailViewController.swift */; };
 		9B15B8C5261AC2A6003BC4DA /* SignUpScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B15B8C4261AC2A6003BC4DA /* SignUpScreenViewController.swift */; };
+		9B180AAB26394B6200841CA8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9B180AAA26394B6100841CA8 /* GoogleService-Info.plist */; };
 		9B21A7DC261F290F0049FA9C /* AdminOrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B21A7DB261F290F0049FA9C /* AdminOrdersViewController.swift */; };
 		9B21A7E2261F38AD0049FA9C /* NewOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B21A7E1261F38AD0049FA9C /* NewOrderTableViewCell.swift */; };
 		9B21A7E4261F38BD0049FA9C /* ReadyOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B21A7E3261F38BD0049FA9C /* ReadyOrderTableViewCell.swift */; };
@@ -86,7 +87,6 @@
 		9BF97F50260F4E2400B9C1F4 /* Res.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BF97F4C260F4E2400B9C1F4 /* Res.json */; };
 		9BF97F56260F683B00B9C1F4 /* emprtCart.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BF97F55260F683B00B9C1F4 /* emprtCart.json */; };
 		9BFAA26B2611AD4F00FA9E96 /* EditPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFAA26A2611AD4E00FA9E96 /* EditPhotosViewController.swift */; };
-		9BFAC95125EBB31C00B87075 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BFAC95025EBB31B00B87075 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +119,8 @@
 		9B1491332638718D00EEF105 /* HistoryOrderDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderDetailTableViewCell.swift; sourceTree = "<group>"; };
 		9B149135263871CE00EEF105 /* HistoryOrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryOrderDetailViewController.swift; path = ../HistoryOrderDetailViewController.swift; sourceTree = "<group>"; };
 		9B15B8C4261AC2A6003BC4DA /* SignUpScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpScreenViewController.swift; path = ../SignUpScreenViewController.swift; sourceTree = "<group>"; };
+		9B180AAA26394B6100841CA8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9B180AAC26394DE800841CA8 /* Café-Nibm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Café-Nibm.entitlements"; sourceTree = "<group>"; };
 		9B21A7DB261F290F0049FA9C /* AdminOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdminOrdersViewController.swift; path = ../AdminOrdersViewController.swift; sourceTree = "<group>"; };
 		9B21A7E1261F38AD0049FA9C /* NewOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderTableViewCell.swift; sourceTree = "<group>"; };
 		9B21A7E3261F38BD0049FA9C /* ReadyOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyOrderTableViewCell.swift; sourceTree = "<group>"; };
@@ -195,7 +197,6 @@
 		9BF97F4C260F4E2400B9C1F4 /* Res.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Res.json; sourceTree = "<group>"; };
 		9BF97F55260F683B00B9C1F4 /* emprtCart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emprtCart.json; sourceTree = "<group>"; };
 		9BFAA26A2611AD4E00FA9E96 /* EditPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditPhotosViewController.swift; path = ../EditPhotosViewController.swift; sourceTree = "<group>"; };
-		9BFAC95025EBB31B00B87075 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF45460222F351CE3CC4A890 /* Pods-Café-Nibm-Café-NibmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Café-Nibm-Café-NibmUITests.release.xcconfig"; path = "Target Support Files/Pods-Café-Nibm-Café-NibmUITests/Pods-Café-Nibm-Café-NibmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D6BCE506E3639F3BDBE06318 /* Pods-Café-Nibm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Café-Nibm.debug.xcconfig"; path = "Target Support Files/Pods-Café-Nibm/Pods-Café-Nibm.debug.xcconfig"; sourceTree = "<group>"; };
 		FC8AA1CBEF65CE8F8D3227EA /* Pods-Café-Nibm-Café-NibmUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Café-Nibm-Café-NibmUITests.debug.xcconfig"; path = "Target Support Files/Pods-Café-Nibm-Café-NibmUITests/Pods-Café-Nibm-Café-NibmUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -440,6 +441,7 @@
 		9B43BBC125E36D8E0039D5E2 /* Café-Nibm */ = {
 			isa = PBXGroup;
 			children = (
+				9B180AAC26394DE800841CA8 /* Café-Nibm.entitlements */,
 				9B4291742638F04C00A7BD47 /* CoreData */,
 				9B3FDB7026303DCD00ABD480 /* Mp3 Assets */,
 				9BF5570B26090B780060092A /* Network */,
@@ -454,7 +456,7 @@
 				9B43BBCB25E36D940039D5E2 /* Assets.xcassets */,
 				9B43BBCD25E36D940039D5E2 /* LaunchScreen.storyboard */,
 				9B43BBC825E36D8E0039D5E2 /* Main.storyboard */,
-				9BFAC95025EBB31B00B87075 /* GoogleService-Info.plist */,
+				9B180AAA26394B6100841CA8 /* GoogleService-Info.plist */,
 				9B43BBD025E36D940039D5E2 /* Info.plist */,
 			);
 			path = "Café-Nibm";
@@ -690,7 +692,6 @@
 				9BF97F4F260F4E2400B9C1F4 /* Log.json in Resources */,
 				9B3FDB7D2630AF6B00ABD480 /* No Ready.json in Resources */,
 				9BF556FA26088BD30060092A /* 4762-food-carousel.json in Resources */,
-				9BFAC95125EBB31C00B87075 /* GoogleService-Info.plist in Resources */,
 				9BF97F56260F683B00B9C1F4 /* emprtCart.json in Resources */,
 				9B43BBCC25E36D940039D5E2 /* Assets.xcassets in Resources */,
 				9BF5571126091BF00060092A /* No_Network.json in Resources */,
@@ -699,6 +700,7 @@
 				9B99427526389F61005558C5 /* nonew.json in Resources */,
 				9B3FDB6F26302FF000ABD480 /* Bell1.json in Resources */,
 				9B99427626389F61005558C5 /* cook.json in Resources */,
+				9B180AAB26394B6200841CA8 /* GoogleService-Info.plist in Resources */,
 				9B43BBCA25E36D8E0039D5E2 /* Main.storyboard in Resources */,
 				9B9ACB4A2611E440006998F8 /* Add_Photo_Instructions.xib in Resources */,
 				9B3FDB6D26302C5E00ABD480 /* Bell.json in Resources */,
@@ -1037,6 +1039,7 @@
 			baseConfigurationReference = D6BCE506E3639F3BDBE06318 /* Pods-Café-Nibm.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Café-Nibm/Café-Nibm.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98H7T48TZJ;
 				INFOPLIST_FILE = "Café-Nibm/Info.plist";
@@ -1056,6 +1059,7 @@
 			baseConfigurationReference = 3317DC55DE4F003B4AAB95DA /* Pods-Café-Nibm.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Café-Nibm/Café-Nibm.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 98H7T48TZJ;
 				INFOPLIST_FILE = "Café-Nibm/Info.plist";

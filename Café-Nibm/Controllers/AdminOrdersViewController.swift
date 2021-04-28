@@ -521,6 +521,53 @@ class AdminOrdersViewController:  UIViewController , UITableViewDelegate , UITab
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
+                                              /*
+                                             // MARK: - delete New Order Arriving status using Coredata.)
+
+                                             // In here we are deleting core data for New Order Arriving status.
+                                            
+                                             */
+        
+        let managedContext = appDelegate!.persistentContainer.viewContext
+               let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "NewOrders")
+                  fetchRequest.returnsObjectsAsFaults = false
+
+                  do
+                  {
+                   let results = try managedContext.fetch(fetchRequest)
+                      for managedObject in results
+                      {
+                          let managedObjectData:NSManagedObject = managedObject as! NSManagedObject
+                       managedContext.delete(managedObjectData)
+                      }
+                  } catch let error as NSError {
+                     // print("Detele all data in \(entity) error : \(error) \(error.userInfo)")
+                  }
+        
+        
+      
+                    let fetchRequestArriving = NSFetchRequest<NSFetchRequestResult>(entityName: "ArrivingStatus")
+                       fetchRequestArriving.returnsObjectsAsFaults = false
+
+                       do
+                       {
+                        let results = try managedContext.fetch(fetchRequestArriving)
+                           for managedObject in results
+                           {
+                               let managedObjectData:NSManagedObject = managedObject as! NSManagedObject
+                            managedContext.delete(managedObjectData)
+                           }
+                       } catch let error as NSError {
+                          // print("Detele all data in \(entity) error : \(error) \(error.userInfo)")
+                       }
+                                   
+               
+                                     
+        
 
         UIApplication.shared.applicationIconBadgeNumber = 0
         

@@ -12,6 +12,10 @@ import Firebase
 import FBSDKLoginKit
 import CoreLocation
 import LocalAuthentication
+import FacebookCore
+import FacebookLogin
+
+
 
 
 class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocationManagerDelegate{
@@ -31,6 +35,8 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
     
     @IBOutlet weak var loginButton: FBLoginButton!
     
+    var appDelegate = UIApplication.shared.delegate as? AppDelegate
+
     
     /// The username and password that we want to store or read.
        struct Credentials {
@@ -88,6 +94,8 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
                                   
                                   self.navigationController?.pushViewController(VC1, animated: true)
         }
+        
+        
         
         
         
@@ -166,21 +174,55 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
    
     
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
-        let token = result?.token?.tokenString
-        let request = FBSDKLoginKit.GraphRequest(graphPath: "me",
-                                                 parameters: ["fields": "email, name"],
-                                                 tokenString: token,
-                                                 version: nil,
-                                                 httpMethod: .get)
-        request.start(completionHandler: {connection, result, error in
-            
-            print("\(result)")
-        })
+        // Facebook graph request to retrieve the user email & name
+        let token = AccessToken.current?.tokenString
+        let params = ["fields": "first_name, last_name, email"]
+        let graphRequest = GraphRequest(graphPath: "me", parameters: params, tokenString: token, version: nil, httpMethod: .get)
+        graphRequest.start { (connection, result, error) in
+
+            if let err = error {
+                print("Facebook graph request error: \(err)")
+            } else {
+                print("Facebook graph request successful!")
+
+                guard let json = result as? NSDictionary else { return }
+                if let email = json["email"] as? String {
+                    print("\(email)")
+                }
+                if let firstName = json["first_name"] as? String {
+                    print("\(firstName)")
+                }
+                if let lastName = json["last_name"] as? String {
+                    print("\(lastName)")
+                }
+                if let id = json["id"] as? String {
+                    print("\(id)")
+                }
+                
+                // `AccessToken` is generated after user logs in through Facebook SDK successfully
+                let facebookToken = AccessToken.current!.tokenString
+                let credential = FacebookAuthProvider.credential(withAccessToken: facebookToken)
+                Auth.auth().signIn(with: credential) { (result, error) in
+                  if let error = error {
+                    print("Firebase auth fails with error: \(error.localizedDescription)")
+                  } else if let result = result {
+                    print("Firebase login succeeds")
+                  
+                  }
+                }
+                
+              
+                
+                
+            }
+        }
     }
     
     func loginButtonDidLogOut(_ loginButton: FBLoginButton) {
         
     }
+    
+    
     
     
     //Hide navigation bar when top and show navigation bar when scrolling down.
@@ -224,6 +266,7 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
     }
     
   
+    
     
     
 
@@ -295,7 +338,7 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
                                                                                                      self.present(alert, animated: true, completion: nil)
                     
                 default:
-                    self.errorLabel.text = "Unable to Sign up"
+                    self.errorLabel.text = "Unable to login"
                     print("Error: \(error.localizedDescription)")
                     let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
                                                    alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
@@ -340,13 +383,7 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
                            vc.modalPresentationStyle = .fullScreen
                            vc.modalTransitionStyle = .crossDissolve
                            self.present(vc, animated: true)
-                           
 
-                            
-
-                            
-                            
-                   
                
                     
                   } else {

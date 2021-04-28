@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import FirebaseAuth
 import Lottie
+import CoreData
 
 class AddCategoryViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -40,7 +41,7 @@ class AddCategoryViewController: UIViewController, UITableViewDelegate, UITableV
     
      var categoryId = ""
     
-    
+      var appDelegate = UIApplication.shared.delegate as? AppDelegate
 
      
     
@@ -169,6 +170,36 @@ class AddCategoryViewController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        //As we know that container is set up in the AppDelegates so we need to refer that container.
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+                
+                //We need to create a context from this container
+                let managedContext = appDelegate.persistentContainer.viewContext
+                
+                //Prepare the request of type NSFetchRequest  for the entity
+                let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "NewOrders")
+      
+        
+                do {
+                    let result = try managedContext.fetch(fetchRequest)
+                    for data in result as! [NSManagedObject] {
+                        print(data.value(forKey: "status") as! String)
+                        
+                        if(data.value (forKey: "status") as! String == "true"){
+                            
+                            let notificationType = "You have received some new orders. Please check them before continue."
+                                        let alertTitle = "New Orders Available"
+                                                   
+                                                 self.appDelegate?.scheduleNotification(notificationType: notificationType, alertTitle: alertTitle)
+                                              
+                        }
+                    }
+                    
+                } catch {
+                    
+                    print("Failed")
+                }
         
       
         

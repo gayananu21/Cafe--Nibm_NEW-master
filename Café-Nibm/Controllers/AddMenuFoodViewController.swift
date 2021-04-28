@@ -12,6 +12,7 @@ import Kingfisher
 import FirebaseAuth
 import FirebaseStorage
 import Lottie
+import CoreData
 
 class AddMenuFoodViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate   {
     
@@ -38,6 +39,7 @@ class AddMenuFoodViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var checkboxButton: UIButton!
     @IBOutlet weak var stackView: UIStackView!
     
+        var appDelegate = UIApplication.shared.delegate as? AppDelegate
     
     
      private let storage = Storage.storage().reference()
@@ -99,6 +101,80 @@ class AddMenuFoodViewController: UIViewController, UIImagePickerControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        /*
+                                             // MARK: - Check New Order Arriving status using Coredata.)
+
+                                             // In here we are checking core data for New Order Arriving status. If a new order arrived we giving a local notification to manager.If he is not in the order screen.
+                                            
+                                             */
+        
+          //As we know that container is set up in the AppDelegates so we need to refer that container.
+                guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+                
+                //We need to create a context from this container
+                let managedContext = appDelegate.persistentContainer.viewContext
+                
+                //Prepare the request of type NSFetchRequest  for the entity
+                let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "NewOrders")
+                
+        
+                do {
+                    let result = try managedContext.fetch(fetchRequest)
+                    for data in result as! [NSManagedObject] {
+                        print(data.value(forKey: "status") as! String)
+                        
+                        if(data.value (forKey: "status") as! String == "true"){
+                            
+                            let notificationType = "You have received some new orders. Please check them before continue."
+                                        let alertTitle = "New Orders Available"
+                                                   
+                                                 self.appDelegate?.scheduleNotification(notificationType: notificationType, alertTitle: alertTitle)
+                                              
+                        }
+                    }
+                    
+                } catch {
+                    
+                    print("Failed")
+                }
+        
+        
+        /*
+                                      // MARK: - Check Customer Arriving Status(Distance)
+
+                                      // In here we are checking core data for customer arriving status. If arriving we giving a local notification to manager.If he is not in the order screen.
+                                     
+                                      */
+                                   
+               
+                                     //Prepare the request of type NSFetchRequest  for the entity
+                                     let fetchRequestArriving = NSFetchRequest<NSFetchRequestResult>(entityName: "ArrivingStatus")
+                                     
+                            
+                                     do {
+                                         let result = try managedContext.fetch(fetchRequestArriving)
+                                         for data in result as! [NSManagedObject] {
+                                             print(data.value(forKey: "status") as! String)
+                                             
+                                             if(data.value (forKey: "status") as! String == "true"){
+                                                 
+                                                 let notificationType = "A customer is arriving. Please check orders for delivery."
+                                                             let alertTitle = "New Orders Available"
+                                                                        
+                                                                      self.appDelegate?.scheduleNotification(notificationType: notificationType, alertTitle: alertTitle)
+                                                                   
+                                             }
+                                         }
+                                         
+                                     } catch {
+                                         
+                                         print("Failed")
+                                     }
+        
+        
         
         self.foodName.addBottomBorderMenu()
         self.foodPrice.addBottomBorderMenu()

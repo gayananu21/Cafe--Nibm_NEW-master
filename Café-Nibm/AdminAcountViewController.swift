@@ -10,6 +10,7 @@
 import UIKit
 import Firebase
 import Lottie
+import CoreData
 
 class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -32,7 +33,7 @@ class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableV
        
         var cartList = [AdminAccountModel]()
     
-    
+      var appDelegate = UIApplication.shared.delegate as? AppDelegate
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            print("you tap on \(indexPath.row)")
@@ -360,15 +361,10 @@ class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableV
     }
     
      @IBAction func btnTakeScreenShot(_ sender: UIButton) {
-          self.takeScreenshot()
         
-        let alert = UIAlertController(title: "Success", message: "Orders History Printed Successfully", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-                                                           
-                                                    
-
-                                      }))
-                                                          self.present(alert, animated: true, completion: nil)
+        
+        printorder()
+        
       }
 
       open func takeScreenshot(_ shouldSave: Bool = true) -> UIImage? {
@@ -381,9 +377,7 @@ class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableV
           layer.render(in:context)
           screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
           UIGraphicsEndImageContext()
-          if let image = screenshotImage, shouldSave {
-              UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-          }
+         
           return screenshotImage
       }
        
@@ -412,9 +406,135 @@ class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableV
         
     }
     
+    func printorder(){
+        
+        print("takeScreenshot")
+                 var screenshotImage :UIImage?
+                 let layer = UIApplication.shared.keyWindow!.layer
+                 let scale = UIScreen.main.scale
+                 UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+        let context = UIGraphicsGetCurrentContext() ?? "" as! CGContext
+                 layer.render(in:context)
+                 screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
+                 UIGraphicsEndImageContext()
+                
+                  
+        
+        let printController = UIPrintInteractionController.shared
+        
+        let printInfo = UIPrintInfo(dictionary: nil)
+        
+        printInfo.jobName = "Printing Order ids"
+        printInfo.outputType = .photo
+        
+        
+        
+        printController.printInfo = printInfo
+        printController.printingItem = screenshotImage
+        
+        printController.present(animated: true) { (_, isPrinted, error) in
+            if error == nil {
+                if isPrinted {
+                    let alert = UIAlertController(title: "Success", message: "Order History Printed Successfully.", preferredStyle: .alert)
+                              alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                 
+                                                                          
+
+                                                            }))
+                                                                                self.present(alert, animated: true, completion: nil)
+                    print("Image is printed")
+                }
+                else{
+                    print("Image is not printed")
+                    
+                    let alert = UIAlertController(title: "Error", message: "Error While Printing Order History.", preferredStyle: .alert)
+                                                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                    
+                                                                                             
+
+                                                                               }))
+                                                                                                   self.present(alert, animated: true, completion: nil)
+                }
+            }
+        }
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        /*
+                                      // MARK: - Check New Order Arriving status using Coredata.)
+
+                                      // In here we are checking core data for New Order Arriving status. If a new order arrived we giving a local notification to manager.If he is not in the order screen.
+                                     
+                                      */
+        
+        //As we know that container is set up in the AppDelegates so we need to refer that container.
+                       guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+                       
+                       //We need to create a context from this container
+                       let managedContext = appDelegate.persistentContainer.viewContext
+                       
+                       //Prepare the request of type NSFetchRequest  for the entity
+                       let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "NewOrders")
+                       
+              
+                       do {
+                           let result = try managedContext.fetch(fetchRequest)
+                           for data in result as! [NSManagedObject] {
+                               print(data.value(forKey: "status") as! String)
+                               
+                               if(data.value (forKey: "status") as! String == "true"){
+                                   
+                                   let notificationType = "You have received some new orders. Please check them before continue."
+                                               let alertTitle = "New Orders Available"
+                                                          
+                                                        self.appDelegate?.scheduleNotification(notificationType: notificationType, alertTitle: alertTitle)
+                                                     
+                               }
+                           }
+                           
+                       } catch {
+                           
+                           print("Failed")
+                       }
+        
+        
+        
+                            /*
+                               // MARK: - Check Customer Arriving Status(Distance)
+
+                               // In here we are checking core data for customer arriving status. If arriving we giving a local notification to manager.If he is not in the order screen.
+                              
+                               */
+                            
+        
+                              //Prepare the request of type NSFetchRequest  for the entity
+                              let fetchRequestArriving = NSFetchRequest<NSFetchRequestResult>(entityName: "ArrivingStatus")
+                              
+                     
+                              do {
+                                  let result = try managedContext.fetch(fetchRequestArriving)
+                                  for data in result as! [NSManagedObject] {
+                                      print(data.value(forKey: "status") as! String)
+                                      
+                                      if(data.value (forKey: "status") as! String == "true"){
+                                          
+                                          let notificationType = "A customer is arriving. Please check orders for delivery."
+                                                      let alertTitle = "New Orders Available"
+                                                                 
+                                                               self.appDelegate?.scheduleNotification(notificationType: notificationType, alertTitle: alertTitle)
+                                                            
+                                      }
+                                  }
+                                  
+                              } catch {
+                                  
+                                  print("Failed")
+                              }
         
         let date = Date()
         let formatter = DateFormatter()

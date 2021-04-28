@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>709327026772-e62b01qabrsso0kibm2i80b7474elhje.apps.googleusercontent.com</string>
+	<string>709327026772-bblh6a5mje4i7dj0n9rd26oj3dul7nvf.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.709327026772-e62b01qabrsso0kibm2i80b7474elhje</string>
+	<string>com.googleusercontent.apps.709327026772-bblh6a5mje4i7dj0n9rd26oj3dul7nvf</string>
 	<key>API_KEY</key>
 	<string>AIzaSyCou05la8te-Idaa2rxQ0yhayKoRfI-aYM</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>gayan.Cafe--Nibm-1</string>
+	<string>gayan.Cafe--Nibm-12-00</string>
 	<key>PROJECT_ID</key>
 	<string>iosp-488c9</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:709327026772:ios:24b380456badbfb7a20bc1</string>
+	<string>1:709327026772:ios:9ffa0938da16876aa20bc1</string>
 	<key>DATABASE_URL</key>
 	<string>https://iosp-488c9-default-rtdb.firebaseio.com</string>
 </dict>
