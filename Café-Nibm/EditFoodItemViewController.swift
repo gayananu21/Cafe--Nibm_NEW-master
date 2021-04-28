@@ -83,7 +83,49 @@ class EditFoodItemViewController:UIViewController, UIImagePickerControllerDelega
                  }
         }
         
+    @IBAction func onDeleteFoodItem(_ sender: Any) {
         
+        let ref = Database.database().reference()
+        
+        
+        
+                   let alert = UIAlertController(title: "Delete Food Item", message: "Are you sure?", preferredStyle: .alert)
+                   alert.addAction(UIAlertAction(title: "cancel", style: .default, handler: { action in
+                                                                   
+                                                                     
+                                                                    }))
+                   alert.addAction(UIAlertAction(title: "Delete ", style: .destructive, handler: { action in
+
+                                         
+                    ref.child("Foods/\(self.editFoodKey)").setValue(nil)
+               
+                    
+                    let alertCon = UIAlertController(title: "Success", message: "Food Deleted Successfully", preferredStyle: UIAlertController.Style.alert)
+
+                                                                                   // add the actions (buttons)
+                        alertCon.addAction(UIAlertAction(title: "Go back", style: .default, handler: { action in
+                                                                        
+
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                  let vc = storyboard.instantiateViewController(withIdentifier: "HOME")
+                                  vc.modalPresentationStyle = .fullScreen
+                                  vc.modalTransitionStyle = .crossDissolve
+                                  self.present(vc, animated: true)
+                                  
+                            
+                                                                                             
+                                                                                            }))
+                                                                                   // show the alert
+                                                                           self.present(alertCon, animated: true, completion: nil)
+                                                 
+
+                                                }))
+        
+        // show the alert
+                                                                                  self.present(alert, animated: true, completion: nil)
+                                                                   
+    }
+    
         
         @IBAction func onAddNewImages(_ sender: Any) {
             

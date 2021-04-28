@@ -247,15 +247,7 @@ class FoodItemViewController: UIViewController {
         VC1.editFoodPrice = foodPrice.text ?? ""
         VC1.editFoodKey = foodKey
         
-        
-                      
-                      
-                      
-                      
-                      
-
-                                                          
-                             
+     
                              self.navigationController?.pushViewController(VC1, animated: true)
                       
         

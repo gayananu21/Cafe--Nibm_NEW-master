@@ -331,18 +331,13 @@ class AddMenuFoodViewController: UIViewController, UIImagePickerControllerDelega
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]){
         picker.dismiss(animated: true, completion: nil)
         
-        guard let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else{
-            
-            return
-        }
+     let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage
         
-        guard let imageData = image.pngData() else{
-            return
-        }
+         let imageData = image!.pngData()
         
        
         
-        storage.child("featured images/\(self.foodName.text ?? "")/featuredImage.jpg").putData(imageData, metadata: nil, completion: {_, error in
+        storage.child("featured images/\(self.foodName.text ?? "")/featuredImage.jpg").putData(imageData!, metadata: nil, completion: {_, error in
             guard error == nil else {
                 print("Failed to upload")
                 
@@ -359,6 +354,15 @@ class AddMenuFoodViewController: UIViewController, UIImagePickerControllerDelega
         
         storage.child("featured images/\(self.foodName.text ?? "")/featuredImage.jpg").downloadURL(completion: {url, error in
             guard let url = url, error == nil else{
+                
+                let alert = UIAlertController(title: "Error", message: "Failed to upload new image! Please try again.", preferredStyle: UIAlertController.Style.alert)
+
+                                                                                                                                                                // add the actions (buttons)
+                                                                                                                                                                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                                                                                                                                                                
+                                                                                                                                                                // show the alert
+                                                                                                                                                                self.present(alert, animated: true, completion: nil)
+                
                 return
                 
             }
@@ -446,6 +450,17 @@ class AddMenuFoodViewController: UIViewController, UIImagePickerControllerDelega
                 
                 //adding the artist inside the generated unique key
                          refAddNewFood.child(key!).setValue(newFood)
+                
+                
+                           let alert = UIAlertController(title: "Success", message: "New Food Item Added Successfully.", preferredStyle: UIAlertController.Style.alert)
+
+                                                                                       // add the actions (buttons)
+                                                                           alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
+                                                                                                                   
+                                                                                       // show the alert
+                                                                               self.present(alert, animated: true, completion: nil)
+                
+                
                 
                 
                

@@ -2225,6 +2225,28 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="bec-rZ-602"/>
                                                 </constraints>
                                             </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O55-7Q-ik2" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                <rect key="frame" x="126.5" y="1352" width="161" height="72"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="161" id="433-uC-7Ds"/>
+                                                    <constraint firstAttribute="height" constant="72" id="mAF-dt-E6j"/>
+                                                </constraints>
+                                                <state key="normal" title="DELETE"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="onDeleteFoodItem:" destination="ezb-Un-XIy" eventType="touchUpInside" id="rCz-b5-m3k"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
@@ -2238,6 +2260,7 @@
                                             <constraint firstAttribute="trailing" secondItem="nlH-sV-dEd" secondAttribute="trailing" constant="70" id="9uL-Xa-daP"/>
                                             <constraint firstItem="Tpb-io-9BU" firstAttribute="top" secondItem="QyO-OX-mqa" secondAttribute="bottom" constant="20" id="BNk-Sy-W0r"/>
                                             <constraint firstItem="egi-Di-9nM" firstAttribute="leading" secondItem="0V0-A7-NcG" secondAttribute="trailing" constant="30" id="CDn-0S-nPW"/>
+                                            <constraint firstItem="O55-7Q-ik2" firstAttribute="top" secondItem="gkI-bw-1OT" secondAttribute="bottom" constant="65" id="CQN-gf-qQL"/>
                                             <constraint firstItem="AG0-sB-W8k" firstAttribute="centerX" secondItem="8mI-LP-uGm" secondAttribute="centerX" id="FKW-aE-kSu"/>
                                             <constraint firstItem="gkI-bw-1OT" firstAttribute="top" secondItem="n0k-Cu-XAe" secondAttribute="bottom" constant="50" id="FLW-k4-0zk"/>
                                             <constraint firstItem="TEZ-ie-7X1" firstAttribute="leading" secondItem="8mI-LP-uGm" secondAttribute="leading" constant="30" id="G5b-ze-3vE"/>
@@ -2265,6 +2288,7 @@
                                             <constraint firstItem="BTJ-97-MZ8" firstAttribute="top" secondItem="0V0-A7-NcG" secondAttribute="bottom" constant="10" id="ihs-oJ-CZ1"/>
                                             <constraint firstItem="QyO-OX-mqa" firstAttribute="top" secondItem="8GZ-rD-tmi" secondAttribute="bottom" constant="29" id="ip7-5J-1zw"/>
                                             <constraint firstItem="Gcc-SU-CNn" firstAttribute="top" secondItem="8GZ-rD-tmi" secondAttribute="bottom" constant="9" id="jMH-wr-hm6"/>
+                                            <constraint firstItem="O55-7Q-ik2" firstAttribute="centerX" secondItem="8mI-LP-uGm" secondAttribute="centerX" id="jbL-QP-Zun"/>
                                             <constraint firstItem="AG0-sB-W8k" firstAttribute="top" secondItem="8mI-LP-uGm" secondAttribute="top" constant="1" id="lsd-Pz-1vS"/>
                                             <constraint firstItem="7YQ-BW-5hV" firstAttribute="leading" secondItem="8mI-LP-uGm" secondAttribute="leading" constant="70" id="mFc-Z1-3oN"/>
                                             <constraint firstItem="M9u-Zb-qhC" firstAttribute="top" secondItem="TEZ-ie-7X1" secondAttribute="bottom" constant="10" id="mWA-b4-qjx"/>
@@ -2323,7 +2347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Usp-4r-wQN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2728" y="-2938"/>
+            <point key="canvasLocation" x="2726.0869565217395" y="-2938.3928571428569"/>
         </scene>
         <!--Edit Photos View Controller-->
         <scene sceneID="aH4-84-xR0">
