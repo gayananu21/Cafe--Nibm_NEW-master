@@ -8,14 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9B01F2CB25F5D3E000292A5C /* Home_Tab_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B01F2CA25F5D3DF00292A5C /* Home_Tab_ViewController.swift */; };
-		9B01F2CD25F5FFF200292A5C /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B01F2CC25F5FFF200292A5C /* LocationViewController.swift */; };
 		9B04F8D525F4BDA1003FF072 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B04F8D425F4BDA1003FF072 /* CollectionModel.swift */; };
-		9B04F8D925F51B13003FF072 /* LOGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B04F8D825F51B13003FF072 /* LOGViewController.swift */; };
 		9B0D427D25E42BD600F06C91 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D427C25E42BD600F06C91 /* ForgotPasswordViewController.swift */; };
 		9B0D42C125E4D08600F06C91 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D42C025E4D08600F06C91 /* Food.swift */; };
 		9B0D42C325E4D09800F06C91 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D42C225E4D09800F06C91 /* RestaurantTableViewCell.swift */; };
-		9B0D42C525E4D13400F06C91 /* ResturantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D42C425E4D13400F06C91 /* ResturantViewController.swift */; };
-		9B0D42C825E4D5C700F06C91 /* FoodItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B0D42C725E4D5C700F06C91 /* FoodItemViewController.swift */; };
 		9B14913226386C2700EEF105 /* HistoryOrderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B14913126386C2700EEF105 /* HistoryOrderDetail.swift */; };
 		9B1491342638718D00EEF105 /* HistoryOrderDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1491332638718D00EEF105 /* HistoryOrderDetailTableViewCell.swift */; };
 		9B149136263871CE00EEF105 /* HistoryOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B149135263871CE00EEF105 /* HistoryOrderDetailViewController.swift */; };
@@ -34,12 +30,6 @@
 		9B2BD57225E37CCB000A33BB /* UHBCustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BD57125E37CCB000A33BB /* UHBCustomLabel.swift */; };
 		9B2BD57425E39783000A33BB /* LoginScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BD57325E39783000A33BB /* LoginScreenViewController.swift */; };
 		9B2BD57625E3ABDC000A33BB /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2BD57525E3ABDC000A33BB /* RoundButton.swift */; };
-		9B31873D25ED4865007765CA /* OrdersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31873C25ED4865007765CA /* OrdersModel.swift */; };
-		9B31873F25ED55E2007765CA /* profileRecentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31873E25ED55E2007765CA /* profileRecentModel.swift */; };
-		9B31874125ED62BE007765CA /* profileRecentModel1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31874025ED62BE007765CA /* profileRecentModel1.swift */; };
-		9B31874325EDFB1D007765CA /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31874225EDFB1D007765CA /* CartModel.swift */; };
-		9B31874525EDFB37007765CA /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31874425EDFB37007765CA /* CartTableViewCell.swift */; };
-		9B31874725EDFB56007765CA /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B31874625EDFB56007765CA /* CartViewController.swift */; };
 		9B336F1226372CB7008B7D51 /* RegisterUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B336F1126372CB7008B7D51 /* RegisterUITest.swift */; };
 		9B336F14263733EC008B7D51 /* ForgotPasswordUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B336F13263733EC008B7D51 /* ForgotPasswordUITest.swift */; };
 		9B368340261C489400457C84 /* AddCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B36833F261C489400457C84 /* AddCategoryViewController.swift */; };
@@ -48,8 +38,6 @@
 		9B368346261CA7DD00457C84 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B368345261CA7DD00457C84 /* CategoryTableViewCell.swift */; };
 		9B368348261CD95D00457C84 /* Pen.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B368347261CD95D00457C84 /* Pen.json */; };
 		9B37184425E65A80003A3451 /* Gradi_.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37184325E65A7F003A3451 /* Gradi_.swift */; };
-		9B37184A25E67180003A3451 /* FoodBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37184925E67180003A3451 /* FoodBar.swift */; };
-		9B37184C25E672D0003A3451 /* FoodItemScrollTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B37184B25E672D0003A3451 /* FoodItemScrollTableViewCell.swift */; };
 		9B3D7E91261C0F2700CC97E3 /* SurveyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3D7E90261C0F2700CC97E3 /* SurveyButton.swift */; };
 		9B3FDB6D26302C5E00ABD480 /* Bell.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FDB6C26302C5D00ABD480 /* Bell.json */; };
 		9B3FDB6F26302FF000ABD480 /* Bell1.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FDB6E26302FF000ABD480 /* Bell1.json */; };
@@ -57,9 +45,10 @@
 		9B3FDB742630620200ABD480 /* New Order.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FDB732630620100ABD480 /* New Order.mp3 */; };
 		9B3FDB7926306C7D00ABD480 /* Café-Nibm.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B3FDB7726306C7D00ABD480 /* Café-Nibm.xcdatamodeld */; };
 		9B3FDB7D2630AF6B00ABD480 /* No Ready.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B3FDB7C2630AF6900ABD480 /* No Ready.json */; };
+		9B4291652638E36500A7BD47 /* FoodItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4291642638E36400A7BD47 /* FoodItemViewController.swift */; };
+		9B4291762638FB9F00A7BD47 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B4291752638FB9E00A7BD47 /* Spinner.swift */; };
 		9B43BBC325E36D8E0039D5E2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43BBC225E36D8E0039D5E2 /* AppDelegate.swift */; };
 		9B43BBC525E36D8E0039D5E2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43BBC425E36D8E0039D5E2 /* SceneDelegate.swift */; };
-		9B43BBC725E36D8E0039D5E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B43BBC625E36D8E0039D5E2 /* ViewController.swift */; };
 		9B43BBCA25E36D8E0039D5E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B43BBC825E36D8E0039D5E2 /* Main.storyboard */; };
 		9B43BBCC25E36D940039D5E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B43BBCB25E36D940039D5E2 /* Assets.xcassets */; };
 		9B43BBCF25E36D940039D5E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B43BBCD25E36D940039D5E2 /* LaunchScreen.storyboard */; };
@@ -69,25 +58,13 @@
 		9B6F1DB526209E650008FCA4 /* AdminAcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F1DB426209E650008FCA4 /* AdminAcountViewController.swift */; };
 		9B6F1DB726209E8E0008FCA4 /* AdminAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F1DB626209E8E0008FCA4 /* AdminAccountTableViewCell.swift */; };
 		9B6F1DBB26209EE00008FCA4 /* AdminAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6F1DBA26209EE00008FCA4 /* AdminAccountModel.swift */; };
-		9B75A46325E7F25A00F20165 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75A46225E7F25900F20165 /* OrderViewController.swift */; };
-		9B75A46525E7F3D700F20165 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75A46425E7F3D700F20165 /* OrderTableViewCell.swift */; };
-		9B75A46725E8091700F20165 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75A46625E8091700F20165 /* ProfileViewController.swift */; };
-		9B75A46925E8BA2100F20165 /* ProfileUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75A46825E8BA2100F20165 /* ProfileUITableViewCell.swift */; };
-		9B75A46B25E8C1A900F20165 /* Profile_1_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B75A46A25E8C1A900F20165 /* Profile_1_TableViewCell.swift */; };
 		9B99427526389F61005558C5 /* nonew.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B99427326389F60005558C5 /* nonew.json */; };
 		9B99427626389F61005558C5 /* cook.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B99427426389F60005558C5 /* cook.json */; };
 		9B9942782638B4D3005558C5 /* shimmer.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B9942772638B4D3005558C5 /* shimmer.json */; };
 		9B99427A2638BDBC005558C5 /* Load.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B9942792638BDBC005558C5 /* Load.json */; };
 		9B9ACB482611E406006998F8 /* Add_Photo_Instructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9ACB472611E406006998F8 /* Add_Photo_Instructions.swift */; };
 		9B9ACB4A2611E440006998F8 /* Add_Photo_Instructions.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B9ACB492611E43F006998F8 /* Add_Photo_Instructions.xib */; };
-		9B9BF52725E56BA2002F0B53 /* HomeCartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9BF52625E56BA2002F0B53 /* HomeCartTableViewCell.swift */; };
 		9BBA98B82636FECA008A298A /* Cafe__NibmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBA98B72636FECA008A298A /* Cafe__NibmUITests.swift */; };
-		9BD1E47625F07B9C004DF8C0 /* OrderScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1E47525F07B9C004DF8C0 /* OrderScreenViewController.swift */; };
-		9BD1E47825F07BC6004DF8C0 /* OrderScreenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1E47725F07BC6004DF8C0 /* OrderScreenTableViewCell.swift */; };
-		9BD1E47A25F07BE1004DF8C0 /* OrderScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BD1E47925F07BE1004DF8C0 /* OrderScreenModel.swift */; };
-		9BDB570625E4F2D4003DC9B1 /* SampleSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BDB570525E4F2D4003DC9B1 /* SampleSliderViewController.swift */; };
-		9BE481602604B2D7006DB71D /* Location_NAV_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE4815F2604B2D7006DB71D /* Location_NAV_ViewController.swift */; };
-		9BE481642605DC52006DB71D /* Order_History_Detail_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BE481632605DC52006DB71D /* Order_History_Detail_ViewController.swift */; };
 		9BEA666D261DD4B500BB91E6 /* AddNewCollectionImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BEA666C261DD4B500BB91E6 /* AddNewCollectionImagesViewController.swift */; };
 		9BF556FA26088BD30060092A /* 4762-food-carousel.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BF556F726088BCA0060092A /* 4762-food-carousel.json */; };
 		9BF556FB26088BD30060092A /* 6510-sad-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BF556F826088BD00060092A /* 6510-sad-animation.json */; };
@@ -97,7 +74,6 @@
 		9BF5570D26090B9C0060092A /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5570C26090B9C0060092A /* NetworkMonitor.swift */; };
 		9BF5570F260913CF0060092A /* NoNetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF5570E260913CF0060092A /* NoNetworkViewController.swift */; };
 		9BF5571126091BF00060092A /* No_Network.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BF5571026091BF00060092A /* No_Network.json */; };
-		9BF809AB25F38959003CA392 /* Image_Test_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF809AA25F38959003CA392 /* Image_Test_ViewController.swift */; };
 		9BF97F3A260F4DDA00B9C1F4 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF97F39260F4DDA00B9C1F4 /* OnboardingController.swift */; };
 		9BF97F3E260F4E0600B9C1F4 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF97F3C260F4E0500B9C1F4 /* Slide.swift */; };
 		9BF97F3F260F4E0600B9C1F4 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF97F3D260F4E0500B9C1F4 /* Slide.xib */; };
@@ -110,9 +86,6 @@
 		9BF97F50260F4E2400B9C1F4 /* Res.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BF97F4C260F4E2400B9C1F4 /* Res.json */; };
 		9BF97F56260F683B00B9C1F4 /* emprtCart.json in Resources */ = {isa = PBXBuildFile; fileRef = 9BF97F55260F683B00B9C1F4 /* emprtCart.json */; };
 		9BFAA26B2611AD4F00FA9E96 /* EditPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFAA26A2611AD4E00FA9E96 /* EditPhotosViewController.swift */; };
-		9BFAC94925EBA3D700B87075 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFAC94825EBA3D700B87075 /* TestViewController.swift */; };
-		9BFAC94B25EBA81A00B87075 /* ArtistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFAC94A25EBA81A00B87075 /* ArtistModel.swift */; };
-		9BFAC94D25EBAAD800B87075 /* TestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFAC94C25EBAAD800B87075 /* TestTableViewCell.swift */; };
 		9BFAC95125EBB31C00B87075 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9BFAC95025EBB31B00B87075 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -137,60 +110,49 @@
 		206A8013D55097381DD26BE8 /* Pods-Café-NibmTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Café-NibmTests.debug.xcconfig"; path = "Target Support Files/Pods-Café-NibmTests/Pods-Café-NibmTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3317DC55DE4F003B4AAB95DA /* Pods-Café-Nibm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Café-Nibm.release.xcconfig"; path = "Target Support Files/Pods-Café-Nibm/Pods-Café-Nibm.release.xcconfig"; sourceTree = "<group>"; };
 		648232428459DB3438920618 /* Pods-Café-NibmTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Café-NibmTests.release.xcconfig"; path = "Target Support Files/Pods-Café-NibmTests/Pods-Café-NibmTests.release.xcconfig"; sourceTree = "<group>"; };
-		9B01F2CA25F5D3DF00292A5C /* Home_Tab_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home_Tab_ViewController.swift; sourceTree = "<group>"; };
-		9B01F2CC25F5FFF200292A5C /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		9B01F2CA25F5D3DF00292A5C /* Home_Tab_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Home_Tab_ViewController.swift; path = "Café-Nibm/Controllers/Home_Tab_ViewController.swift"; sourceTree = SOURCE_ROOT; };
 		9B04F8D425F4BDA1003FF072 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
-		9B04F8D825F51B13003FF072 /* LOGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LOGViewController.swift; sourceTree = "<group>"; };
-		9B0D427C25E42BD600F06C91 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = ../ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		9B0D427C25E42BD600F06C91 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewController.swift; path = ../../ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		9B0D42C025E4D08600F06C91 /* Food.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		9B0D42C225E4D09800F06C91 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantTableViewCell.swift; path = ../RestaurantTableViewCell.swift; sourceTree = "<group>"; };
-		9B0D42C425E4D13400F06C91 /* ResturantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ResturantViewController.swift; path = ../ResturantViewController.swift; sourceTree = "<group>"; };
-		9B0D42C725E4D5C700F06C91 /* FoodItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemViewController.swift; sourceTree = "<group>"; };
 		9B14913126386C2700EEF105 /* HistoryOrderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderDetail.swift; sourceTree = "<group>"; };
 		9B1491332638718D00EEF105 /* HistoryOrderDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderDetailTableViewCell.swift; sourceTree = "<group>"; };
-		9B149135263871CE00EEF105 /* HistoryOrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryOrderDetailViewController.swift; sourceTree = "<group>"; };
-		9B15B8C4261AC2A6003BC4DA /* SignUpScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpScreenViewController.swift; sourceTree = "<group>"; };
-		9B21A7DB261F290F0049FA9C /* AdminOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminOrdersViewController.swift; sourceTree = "<group>"; };
+		9B149135263871CE00EEF105 /* HistoryOrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryOrderDetailViewController.swift; path = ../HistoryOrderDetailViewController.swift; sourceTree = "<group>"; };
+		9B15B8C4261AC2A6003BC4DA /* SignUpScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpScreenViewController.swift; path = ../SignUpScreenViewController.swift; sourceTree = "<group>"; };
+		9B21A7DB261F290F0049FA9C /* AdminOrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdminOrdersViewController.swift; path = ../AdminOrdersViewController.swift; sourceTree = "<group>"; };
 		9B21A7E1261F38AD0049FA9C /* NewOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderTableViewCell.swift; sourceTree = "<group>"; };
 		9B21A7E3261F38BD0049FA9C /* ReadyOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyOrderTableViewCell.swift; sourceTree = "<group>"; };
 		9B21A7E5261F38DA0049FA9C /* ProcessingOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingOrderTableViewCell.swift; sourceTree = "<group>"; };
-		9B21A7E7261F390F0049FA9C /* NewOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrder.swift; sourceTree = "<group>"; };
-		9B21A7E9261F39210049FA9C /* ReadyOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadyOrder.swift; sourceTree = "<group>"; };
-		9B21A7EB261F39340049FA9C /* ProcessingOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessingOrder.swift; sourceTree = "<group>"; };
-		9B21A7ED261FE42D0049FA9C /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderDetailsViewController.swift; path = ../OrderDetailsViewController.swift; sourceTree = "<group>"; };
+		9B21A7E7261F390F0049FA9C /* NewOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NewOrder.swift; path = ../NewOrder.swift; sourceTree = "<group>"; };
+		9B21A7E9261F39210049FA9C /* ReadyOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReadyOrder.swift; path = ../ReadyOrder.swift; sourceTree = "<group>"; };
+		9B21A7EB261F39340049FA9C /* ProcessingOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProcessingOrder.swift; path = ../ProcessingOrder.swift; sourceTree = "<group>"; };
+		9B21A7ED261FE42D0049FA9C /* OrderDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OrderDetailsViewController.swift; path = ../../OrderDetailsViewController.swift; sourceTree = "<group>"; };
 		9B21A7EF261FE4D40049FA9C /* OrderDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailTableViewCell.swift; sourceTree = "<group>"; };
 		9B21A7F1261FE5120049FA9C /* OrderDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetailModel.swift; sourceTree = "<group>"; };
-		9B2BD56E25E36E00000A33BB /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		9B2BD57125E37CCB000A33BB /* UHBCustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UHBCustomLabel.swift; sourceTree = "<group>"; };
-		9B2BD57325E39783000A33BB /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenViewController.swift; sourceTree = "<group>"; };
-		9B2BD57525E3ABDC000A33BB /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
-		9B31873C25ED4865007765CA /* OrdersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersModel.swift; sourceTree = "<group>"; };
-		9B31873E25ED55E2007765CA /* profileRecentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileRecentModel.swift; sourceTree = "<group>"; };
-		9B31874025ED62BE007765CA /* profileRecentModel1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileRecentModel1.swift; sourceTree = "<group>"; };
-		9B31874225EDFB1D007765CA /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
-		9B31874425EDFB37007765CA /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
-		9B31874625EDFB56007765CA /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		9B2BD56E25E36E00000A33BB /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Utilities.swift; path = ../Utilities.swift; sourceTree = "<group>"; };
+		9B2BD57125E37CCB000A33BB /* UHBCustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UHBCustomLabel.swift; path = ../UHBCustomLabel.swift; sourceTree = "<group>"; };
+		9B2BD57325E39783000A33BB /* LoginScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginScreenViewController.swift; path = ../LoginScreenViewController.swift; sourceTree = "<group>"; };
+		9B2BD57525E3ABDC000A33BB /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RoundButton.swift; path = ../RoundButton.swift; sourceTree = "<group>"; };
 		9B336F1126372CB7008B7D51 /* RegisterUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUITest.swift; sourceTree = "<group>"; };
 		9B336F13263733EC008B7D51 /* ForgotPasswordUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordUITest.swift; sourceTree = "<group>"; };
-		9B36833F261C489400457C84 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCategoryViewController.swift; sourceTree = "<group>"; };
-		9B368341261C48A600457C84 /* AddMenuFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMenuFoodViewController.swift; sourceTree = "<group>"; };
+		9B36833F261C489400457C84 /* AddCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddCategoryViewController.swift; path = ../AddCategoryViewController.swift; sourceTree = "<group>"; };
+		9B368341261C48A600457C84 /* AddMenuFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddMenuFoodViewController.swift; path = ../AddMenuFoodViewController.swift; sourceTree = "<group>"; };
 		9B368343261CA73B00457C84 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		9B368345261CA7DD00457C84 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		9B368347261CD95D00457C84 /* Pen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Pen.json; sourceTree = "<group>"; };
-		9B37184325E65A7F003A3451 /* Gradi_.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gradi_.swift; sourceTree = "<group>"; };
-		9B37184925E67180003A3451 /* FoodBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodBar.swift; sourceTree = "<group>"; };
-		9B37184B25E672D0003A3451 /* FoodItemScrollTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemScrollTableViewCell.swift; sourceTree = "<group>"; };
-		9B3D7E90261C0F2700CC97E3 /* SurveyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyButton.swift; sourceTree = "<group>"; };
+		9B37184325E65A7F003A3451 /* Gradi_.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gradi_.swift; path = ../Gradi_.swift; sourceTree = "<group>"; };
+		9B3D7E90261C0F2700CC97E3 /* SurveyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SurveyButton.swift; path = ../SurveyButton.swift; sourceTree = "<group>"; };
 		9B3FDB6C26302C5D00ABD480 /* Bell.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bell.json; sourceTree = "<group>"; };
 		9B3FDB6E26302FF000ABD480 /* Bell1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Bell1.json; sourceTree = "<group>"; };
 		9B3FDB7126303DE000ABD480 /* Shop Bell.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Shop Bell.mp3"; sourceTree = "<group>"; };
 		9B3FDB732630620100ABD480 /* New Order.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "New Order.mp3"; sourceTree = "<group>"; };
 		9B3FDB7826306C7D00ABD480 /* Café-Nibm.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Café-Nibm.xcdatamodel"; sourceTree = "<group>"; };
 		9B3FDB7C2630AF6900ABD480 /* No Ready.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "No Ready.json"; sourceTree = "<group>"; };
+		9B4291642638E36400A7BD47 /* FoodItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodItemViewController.swift; path = ../FoodItemViewController.swift; sourceTree = "<group>"; };
+		9B4291752638FB9E00A7BD47 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Spinner.swift; path = ../Spinner.swift; sourceTree = "<group>"; };
 		9B43BBBF25E36D8E0039D5E2 /* Café-Nibm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Café-Nibm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B43BBC225E36D8E0039D5E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B43BBC425E36D8E0039D5E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9B43BBC625E36D8E0039D5E2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9B43BBC925E36D8E0039D5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B43BBCB25E36D940039D5E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B43BBCE25E36D940039D5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -198,43 +160,30 @@
 		9B43BBD525E36D950039D5E2 /* Café-NibmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Café-NibmTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B43BBD925E36D950039D5E2 /* Cafe__NibmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe__NibmTests.swift; sourceTree = "<group>"; };
 		9B43BBDB25E36D950039D5E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B44123225E6AC8C00A0445A /* Try_1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Try_1_ViewController.swift; sourceTree = "<group>"; };
-		9B460E4326245F2800A6D9C7 /* EditFoodItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditFoodItemViewController.swift; path = ../EditFoodItemViewController.swift; sourceTree = "<group>"; };
-		9B6F1DB426209E650008FCA4 /* AdminAcountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdminAcountViewController.swift; path = ../AdminAcountViewController.swift; sourceTree = "<group>"; };
+		9B44123225E6AC8C00A0445A /* Try_1_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Try_1_ViewController.swift; path = ../Try_1_ViewController.swift; sourceTree = "<group>"; };
+		9B460E4326245F2800A6D9C7 /* EditFoodItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditFoodItemViewController.swift; path = ../../EditFoodItemViewController.swift; sourceTree = "<group>"; };
+		9B6F1DB426209E650008FCA4 /* AdminAcountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdminAcountViewController.swift; path = ../../AdminAcountViewController.swift; sourceTree = "<group>"; };
 		9B6F1DB626209E8E0008FCA4 /* AdminAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AdminAccountTableViewCell.swift; path = ../../AdminAccountTableViewCell.swift; sourceTree = "<group>"; };
 		9B6F1DBA26209EE00008FCA4 /* AdminAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminAccountModel.swift; sourceTree = "<group>"; };
-		9B75A46225E7F25900F20165 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
-		9B75A46425E7F3D700F20165 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
-		9B75A46625E8091700F20165 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = ../ProfileViewController.swift; sourceTree = "<group>"; };
-		9B75A46825E8BA2100F20165 /* ProfileUITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileUITableViewCell.swift; sourceTree = "<group>"; };
-		9B75A46A25E8C1A900F20165 /* Profile_1_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile_1_TableViewCell.swift; sourceTree = "<group>"; };
 		9B99427326389F60005558C5 /* nonew.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = nonew.json; sourceTree = "<group>"; };
 		9B99427426389F60005558C5 /* cook.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cook.json; sourceTree = "<group>"; };
 		9B9942772638B4D3005558C5 /* shimmer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = shimmer.json; sourceTree = "<group>"; };
 		9B9942792638BDBC005558C5 /* Load.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Load.json; sourceTree = "<group>"; };
 		9B9ACB472611E406006998F8 /* Add_Photo_Instructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add_Photo_Instructions.swift; sourceTree = "<group>"; };
 		9B9ACB492611E43F006998F8 /* Add_Photo_Instructions.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Add_Photo_Instructions.xib; sourceTree = "<group>"; };
-		9B9BF52625E56BA2002F0B53 /* HomeCartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCartTableViewCell.swift; sourceTree = "<group>"; };
 		9BBA98B52636FECA008A298A /* Café-NibmUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Café-NibmUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBA98B72636FECA008A298A /* Cafe__NibmUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cafe__NibmUITests.swift; sourceTree = "<group>"; };
 		9BBA98B92636FECA008A298A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9BD1E47525F07B9C004DF8C0 /* OrderScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreenViewController.swift; sourceTree = "<group>"; };
-		9BD1E47725F07BC6004DF8C0 /* OrderScreenTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreenTableViewCell.swift; sourceTree = "<group>"; };
-		9BD1E47925F07BE1004DF8C0 /* OrderScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreenModel.swift; sourceTree = "<group>"; };
-		9BDB570525E4F2D4003DC9B1 /* SampleSliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SampleSliderViewController.swift; path = ../SampleSliderViewController.swift; sourceTree = "<group>"; };
-		9BE4815F2604B2D7006DB71D /* Location_NAV_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_NAV_ViewController.swift; sourceTree = "<group>"; };
-		9BE481632605DC52006DB71D /* Order_History_Detail_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order_History_Detail_ViewController.swift; sourceTree = "<group>"; };
-		9BEA666C261DD4B500BB91E6 /* AddNewCollectionImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewCollectionImagesViewController.swift; sourceTree = "<group>"; };
+		9BEA666C261DD4B500BB91E6 /* AddNewCollectionImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddNewCollectionImagesViewController.swift; path = ../AddNewCollectionImagesViewController.swift; sourceTree = "<group>"; };
 		9BF556F726088BCA0060092A /* 4762-food-carousel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "4762-food-carousel.json"; path = "../4762-food-carousel.json"; sourceTree = "<group>"; };
 		9BF556F826088BD00060092A /* 6510-sad-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "6510-sad-animation.json"; path = "../6510-sad-animation.json"; sourceTree = "<group>"; };
 		9BF556FE26089D090060092A /* Food.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Food.json; sourceTree = "<group>"; };
 		9BF557062608D4C20060092A /* ProfileCover.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ProfileCover.json; sourceTree = "<group>"; };
 		9BF557082608EF550060092A /* Star.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Star.json; sourceTree = "<group>"; };
 		9BF5570C26090B9C0060092A /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
-		9BF5570E260913CF0060092A /* NoNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoNetworkViewController.swift; path = ../NoNetworkViewController.swift; sourceTree = "<group>"; };
+		9BF5570E260913CF0060092A /* NoNetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NoNetworkViewController.swift; path = ../../NoNetworkViewController.swift; sourceTree = "<group>"; };
 		9BF5571026091BF00060092A /* No_Network.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = No_Network.json; sourceTree = "<group>"; };
-		9BF809AA25F38959003CA392 /* Image_Test_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Image_Test_ViewController.swift; path = ../Image_Test_ViewController.swift; sourceTree = "<group>"; };
-		9BF97F39260F4DDA00B9C1F4 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		9BF97F39260F4DDA00B9C1F4 /* OnboardingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingController.swift; path = ../OnboardingController.swift; sourceTree = "<group>"; };
 		9BF97F3C260F4E0500B9C1F4 /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		9BF97F3D260F4E0500B9C1F4 /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		9BF97F41260F4E1000B9C1F4 /* montserrat_light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = montserrat_light.otf; sourceTree = "<group>"; };
@@ -245,10 +194,7 @@
 		9BF97F4B260F4E2200B9C1F4 /* Log.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Log.json; sourceTree = "<group>"; };
 		9BF97F4C260F4E2400B9C1F4 /* Res.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Res.json; sourceTree = "<group>"; };
 		9BF97F55260F683B00B9C1F4 /* emprtCart.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emprtCart.json; sourceTree = "<group>"; };
-		9BFAA26A2611AD4E00FA9E96 /* EditPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPhotosViewController.swift; sourceTree = "<group>"; };
-		9BFAC94825EBA3D700B87075 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
-		9BFAC94A25EBA81A00B87075 /* ArtistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistModel.swift; sourceTree = "<group>"; };
-		9BFAC94C25EBAAD800B87075 /* TestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewCell.swift; sourceTree = "<group>"; };
+		9BFAA26A2611AD4E00FA9E96 /* EditPhotosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditPhotosViewController.swift; path = ../EditPhotosViewController.swift; sourceTree = "<group>"; };
 		9BFAC95025EBB31B00B87075 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CF45460222F351CE3CC4A890 /* Pods-Café-Nibm-Café-NibmUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Café-Nibm-Café-NibmUITests.release.xcconfig"; path = "Target Support Files/Pods-Café-Nibm-Café-NibmUITests/Pods-Café-Nibm-Café-NibmUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D6BCE506E3639F3BDBE06318 /* Pods-Café-Nibm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Café-Nibm.debug.xcconfig"; path = "Target Support Files/Pods-Café-Nibm/Pods-Café-Nibm.debug.xcconfig"; sourceTree = "<group>"; };
@@ -283,19 +229,10 @@
 		9B0D42BF25E4D08600F06C91 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9B42916F2638EEFC00A7BD47 /* Order Models */,
 				9B0D42C025E4D08600F06C91 /* Food.swift */,
-				9B37184925E67180003A3451 /* FoodBar.swift */,
-				9BFAC94A25EBA81A00B87075 /* ArtistModel.swift */,
-				9B31873C25ED4865007765CA /* OrdersModel.swift */,
-				9B31873E25ED55E2007765CA /* profileRecentModel.swift */,
-				9B31874025ED62BE007765CA /* profileRecentModel1.swift */,
-				9B31874225EDFB1D007765CA /* CartModel.swift */,
-				9BD1E47925F07BE1004DF8C0 /* OrderScreenModel.swift */,
 				9B04F8D425F4BDA1003FF072 /* CollectionModel.swift */,
 				9B368343261CA73B00457C84 /* Category.swift */,
-				9B21A7E7261F390F0049FA9C /* NewOrder.swift */,
-				9B21A7E9261F39210049FA9C /* ReadyOrder.swift */,
-				9B21A7EB261F39340049FA9C /* ProcessingOrder.swift */,
 				9B21A7F1261FE5120049FA9C /* OrderDetailModel.swift */,
 				9B6F1DBA26209EE00008FCA4 /* AdminAccountModel.swift */,
 				9B14913126386C2700EEF105 /* HistoryOrderDetail.swift */,
@@ -307,14 +244,6 @@
 			isa = PBXGroup;
 			children = (
 				9B0D42C225E4D09800F06C91 /* RestaurantTableViewCell.swift */,
-				9B9BF52625E56BA2002F0B53 /* HomeCartTableViewCell.swift */,
-				9B37184B25E672D0003A3451 /* FoodItemScrollTableViewCell.swift */,
-				9B75A46425E7F3D700F20165 /* OrderTableViewCell.swift */,
-				9BFAC94C25EBAAD800B87075 /* TestTableViewCell.swift */,
-				9B75A46825E8BA2100F20165 /* ProfileUITableViewCell.swift */,
-				9B75A46A25E8C1A900F20165 /* Profile_1_TableViewCell.swift */,
-				9B31874425EDFB37007765CA /* CartTableViewCell.swift */,
-				9BD1E47725F07BC6004DF8C0 /* OrderScreenTableViewCell.swift */,
 				9B368345261CA7DD00457C84 /* CategoryTableViewCell.swift */,
 				9B21A7E1261F38AD0049FA9C /* NewOrderTableViewCell.swift */,
 				9B21A7E3261F38BD0049FA9C /* ReadyOrderTableViewCell.swift */,
@@ -329,11 +258,11 @@
 		9B2BD56C25E36E00000A33BB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				9B2BD57125E37CCB000A33BB /* UHBCustomLabel.swift */,
-				9B2BD57525E3ABDC000A33BB /* RoundButton.swift */,
-				9B2BD56E25E36E00000A33BB /* Utilities.swift */,
-				9B37184325E65A7F003A3451 /* Gradi_.swift */,
-				9B3D7E90261C0F2700CC97E3 /* SurveyButton.swift */,
+				9B4291702638EFF500A7BD47 /* Label */,
+				9B4291712638F01000A7BD47 /* Button */,
+				9B4291722638F01E00A7BD47 /* Text Fields & Validation */,
+				9B4291732638F03100A7BD47 /* Views */,
+				9B4291772638FBCF00A7BD47 /* Spinner */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -345,6 +274,145 @@
 				9B3FDB732630620100ABD480 /* New Order.mp3 */,
 			);
 			path = "Mp3 Assets";
+			sourceTree = "<group>";
+		};
+		9B4291662638ECC600A7BD47 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				9B2BD57325E39783000A33BB /* LoginScreenViewController.swift */,
+				9B0D427C25E42BD600F06C91 /* ForgotPasswordViewController.swift */,
+				9B15B8C4261AC2A6003BC4DA /* SignUpScreenViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		9B4291672638ED1D00A7BD47 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9B44123225E6AC8C00A0445A /* Try_1_ViewController.swift */,
+				9B01F2CA25F5D3DF00292A5C /* Home_Tab_ViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9B4291682638ED4A00A7BD47 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9BF5570E260913CF0060092A /* NoNetworkViewController.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9B4291692638EDEB00A7BD47 /* Initial Views */ = {
+			isa = PBXGroup;
+			children = (
+				9BF97F39260F4DDA00B9C1F4 /* OnboardingController.swift */,
+			);
+			path = "Initial Views";
+			sourceTree = "<group>";
+		};
+		9B42916A2638EE1E00A7BD47 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				9B6F1DB426209E650008FCA4 /* AdminAcountViewController.swift */,
+				9B149135263871CE00EEF105 /* HistoryOrderDetailViewController.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		9B42916B2638EE3F00A7BD47 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9B36833F261C489400457C84 /* AddCategoryViewController.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		9B42916C2638EE9900A7BD47 /* Menu Food */ = {
+			isa = PBXGroup;
+			children = (
+				9B368341261C48A600457C84 /* AddMenuFoodViewController.swift */,
+				9BEA666C261DD4B500BB91E6 /* AddNewCollectionImagesViewController.swift */,
+			);
+			path = "Menu Food";
+			sourceTree = "<group>";
+		};
+		9B42916D2638EEBE00A7BD47 /* Edit Food */ = {
+			isa = PBXGroup;
+			children = (
+				9B4291642638E36400A7BD47 /* FoodItemViewController.swift */,
+				9BFAA26A2611AD4E00FA9E96 /* EditPhotosViewController.swift */,
+				9B460E4326245F2800A6D9C7 /* EditFoodItemViewController.swift */,
+			);
+			path = "Edit Food";
+			sourceTree = "<group>";
+		};
+		9B42916E2638EECF00A7BD47 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				9B21A7DB261F290F0049FA9C /* AdminOrdersViewController.swift */,
+				9B21A7ED261FE42D0049FA9C /* OrderDetailsViewController.swift */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		9B42916F2638EEFC00A7BD47 /* Order Models */ = {
+			isa = PBXGroup;
+			children = (
+				9B21A7E7261F390F0049FA9C /* NewOrder.swift */,
+				9B21A7E9261F39210049FA9C /* ReadyOrder.swift */,
+				9B21A7EB261F39340049FA9C /* ProcessingOrder.swift */,
+			);
+			path = "Order Models";
+			sourceTree = "<group>";
+		};
+		9B4291702638EFF500A7BD47 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				9B2BD57125E37CCB000A33BB /* UHBCustomLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		9B4291712638F01000A7BD47 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				9B2BD57525E3ABDC000A33BB /* RoundButton.swift */,
+				9B3D7E90261C0F2700CC97E3 /* SurveyButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		9B4291722638F01E00A7BD47 /* Text Fields & Validation */ = {
+			isa = PBXGroup;
+			children = (
+				9B2BD56E25E36E00000A33BB /* Utilities.swift */,
+			);
+			path = "Text Fields & Validation";
+			sourceTree = "<group>";
+		};
+		9B4291732638F03100A7BD47 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9B37184325E65A7F003A3451 /* Gradi_.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9B4291742638F04C00A7BD47 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9B3FDB7726306C7D00ABD480 /* Café-Nibm.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		9B4291772638FBCF00A7BD47 /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				9B4291752638FB9E00A7BD47 /* Spinner.swift */,
+			);
+			path = Spinner;
 			sourceTree = "<group>";
 		};
 		9B43BBB625E36D8E0039D5E2 = {
@@ -372,7 +440,7 @@
 		9B43BBC125E36D8E0039D5E2 /* Café-Nibm */ = {
 			isa = PBXGroup;
 			children = (
-				9B3FDB7726306C7D00ABD480 /* Café-Nibm.xcdatamodeld */,
+				9B4291742638F04C00A7BD47 /* CoreData */,
 				9B3FDB7026303DCD00ABD480 /* Mp3 Assets */,
 				9BF5570B26090B780060092A /* Network */,
 				9B2BD56C25E36E00000A33BB /* Helpers */,
@@ -404,36 +472,15 @@
 		9B8B15FA25E40FE700E915C3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9B2BD57325E39783000A33BB /* LoginScreenViewController.swift */,
-				9B0D427C25E42BD600F06C91 /* ForgotPasswordViewController.swift */,
-				9B15B8C4261AC2A6003BC4DA /* SignUpScreenViewController.swift */,
-				9B43BBC625E36D8E0039D5E2 /* ViewController.swift */,
-				9B0D42C425E4D13400F06C91 /* ResturantViewController.swift */,
-				9BDB570525E4F2D4003DC9B1 /* SampleSliderViewController.swift */,
-				9B44123225E6AC8C00A0445A /* Try_1_ViewController.swift */,
-				9B36833F261C489400457C84 /* AddCategoryViewController.swift */,
-				9B368341261C48A600457C84 /* AddMenuFoodViewController.swift */,
-				9B75A46625E8091700F20165 /* ProfileViewController.swift */,
-				9B75A46225E7F25900F20165 /* OrderViewController.swift */,
-				9BD1E47525F07B9C004DF8C0 /* OrderScreenViewController.swift */,
-				9BFAC94825EBA3D700B87075 /* TestViewController.swift */,
-				9BF809AA25F38959003CA392 /* Image_Test_ViewController.swift */,
-				9B04F8D825F51B13003FF072 /* LOGViewController.swift */,
-				9B01F2CA25F5D3DF00292A5C /* Home_Tab_ViewController.swift */,
-				9B01F2CC25F5FFF200292A5C /* LocationViewController.swift */,
-				9BE4815F2604B2D7006DB71D /* Location_NAV_ViewController.swift */,
-				9BE481632605DC52006DB71D /* Order_History_Detail_ViewController.swift */,
-				9BF5570E260913CF0060092A /* NoNetworkViewController.swift */,
-				9BF97F39260F4DDA00B9C1F4 /* OnboardingController.swift */,
-				9B0D42C725E4D5C700F06C91 /* FoodItemViewController.swift */,
-				9BFAA26A2611AD4E00FA9E96 /* EditPhotosViewController.swift */,
-				9BEA666C261DD4B500BB91E6 /* AddNewCollectionImagesViewController.swift */,
-				9B31874625EDFB56007765CA /* CartViewController.swift */,
-				9B21A7DB261F290F0049FA9C /* AdminOrdersViewController.swift */,
-				9B21A7ED261FE42D0049FA9C /* OrderDetailsViewController.swift */,
-				9B6F1DB426209E650008FCA4 /* AdminAcountViewController.swift */,
-				9B460E4326245F2800A6D9C7 /* EditFoodItemViewController.swift */,
-				9B149135263871CE00EEF105 /* HistoryOrderDetailViewController.swift */,
+				9B4291662638ECC600A7BD47 /* Auth */,
+				9B4291672638ED1D00A7BD47 /* Home */,
+				9B4291682638ED4A00A7BD47 /* Network */,
+				9B4291692638EDEB00A7BD47 /* Initial Views */,
+				9B42916A2638EE1E00A7BD47 /* Account */,
+				9B42916B2638EE3F00A7BD47 /* Category */,
+				9B42916C2638EE9900A7BD47 /* Menu Food */,
+				9B42916D2638EEBE00A7BD47 /* Edit Food */,
+				9B42916E2638EECF00A7BD47 /* Order */,
 				9B0D42C625E4D2D200F06C91 /* Views */,
 			);
 			path = Controllers;
@@ -770,77 +817,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B6F1DB726209E8E0008FCA4 /* AdminAccountTableViewCell.swift in Sources */,
-				9B37184A25E67180003A3451 /* FoodBar.swift in Sources */,
-				9BD1E47A25F07BE1004DF8C0 /* OrderScreenModel.swift in Sources */,
 				9B04F8D525F4BDA1003FF072 /* CollectionModel.swift in Sources */,
-				9BFAC94D25EBAAD800B87075 /* TestTableViewCell.swift in Sources */,
 				9B9ACB482611E406006998F8 /* Add_Photo_Instructions.swift in Sources */,
-				9B43BBC725E36D8E0039D5E2 /* ViewController.swift in Sources */,
-				9B31874325EDFB1D007765CA /* CartModel.swift in Sources */,
 				9BF5570D26090B9C0060092A /* NetworkMonitor.swift in Sources */,
 				9BF5570F260913CF0060092A /* NoNetworkViewController.swift in Sources */,
-				9B75A46925E8BA2100F20165 /* ProfileUITableViewCell.swift in Sources */,
-				9B75A46525E7F3D700F20165 /* OrderTableViewCell.swift in Sources */,
 				9B14913226386C2700EEF105 /* HistoryOrderDetail.swift in Sources */,
 				9B21A7F0261FE4D40049FA9C /* OrderDetailTableViewCell.swift in Sources */,
 				9B21A7EE261FE42E0049FA9C /* OrderDetailsViewController.swift in Sources */,
-				9B31874725EDFB56007765CA /* CartViewController.swift in Sources */,
 				9B43BBC325E36D8E0039D5E2 /* AppDelegate.swift in Sources */,
 				9B0D42C325E4D09800F06C91 /* RestaurantTableViewCell.swift in Sources */,
-				9B75A46725E8091700F20165 /* ProfileViewController.swift in Sources */,
-				9B0D42C825E4D5C700F06C91 /* FoodItemViewController.swift in Sources */,
 				9B2BD57625E3ABDC000A33BB /* RoundButton.swift in Sources */,
-				9BFAC94925EBA3D700B87075 /* TestViewController.swift in Sources */,
-				9B9BF52725E56BA2002F0B53 /* HomeCartTableViewCell.swift in Sources */,
 				9B21A7E8261F390F0049FA9C /* NewOrder.swift in Sources */,
-				9BF809AB25F38959003CA392 /* Image_Test_ViewController.swift in Sources */,
 				9B21A7EA261F39210049FA9C /* ReadyOrder.swift in Sources */,
 				9BFAA26B2611AD4F00FA9E96 /* EditPhotosViewController.swift in Sources */,
 				9B368344261CA73B00457C84 /* Category.swift in Sources */,
-				9B75A46B25E8C1A900F20165 /* Profile_1_TableViewCell.swift in Sources */,
-				9B04F8D925F51B13003FF072 /* LOGViewController.swift in Sources */,
 				9B6F1DBB26209EE00008FCA4 /* AdminAccountModel.swift in Sources */,
 				9B368342261C48A600457C84 /* AddMenuFoodViewController.swift in Sources */,
 				9B21A7DC261F290F0049FA9C /* AdminOrdersViewController.swift in Sources */,
-				9BE481642605DC52006DB71D /* Order_History_Detail_ViewController.swift in Sources */,
 				9BEA666D261DD4B500BB91E6 /* AddNewCollectionImagesViewController.swift in Sources */,
 				9B21A7E4261F38BD0049FA9C /* ReadyOrderTableViewCell.swift in Sources */,
 				9B15B8C5261AC2A6003BC4DA /* SignUpScreenViewController.swift in Sources */,
-				9BD1E47825F07BC6004DF8C0 /* OrderScreenTableViewCell.swift in Sources */,
 				9BF97F3A260F4DDA00B9C1F4 /* OnboardingController.swift in Sources */,
 				9B6F1DB526209E650008FCA4 /* AdminAcountViewController.swift in Sources */,
 				9B2BD57425E39783000A33BB /* LoginScreenViewController.swift in Sources */,
+				9B4291652638E36500A7BD47 /* FoodItemViewController.swift in Sources */,
 				9B0D427D25E42BD600F06C91 /* ForgotPasswordViewController.swift in Sources */,
-				9B31873D25ED4865007765CA /* OrdersModel.swift in Sources */,
 				9B21A7F2261FE5120049FA9C /* OrderDetailModel.swift in Sources */,
-				9B0D42C525E4D13400F06C91 /* ResturantViewController.swift in Sources */,
-				9B75A46325E7F25A00F20165 /* OrderViewController.swift in Sources */,
 				9B460E4426245F2800A6D9C7 /* EditFoodItemViewController.swift in Sources */,
 				9B43BBC525E36D8E0039D5E2 /* SceneDelegate.swift in Sources */,
-				9BDB570625E4F2D4003DC9B1 /* SampleSliderViewController.swift in Sources */,
+				9B4291762638FB9F00A7BD47 /* Spinner.swift in Sources */,
 				9B0D42C125E4D08600F06C91 /* Food.swift in Sources */,
 				9B149136263871CE00EEF105 /* HistoryOrderDetailViewController.swift in Sources */,
 				9B01F2CB25F5D3E000292A5C /* Home_Tab_ViewController.swift in Sources */,
 				9B21A7EC261F39340049FA9C /* ProcessingOrder.swift in Sources */,
-				9BFAC94B25EBA81A00B87075 /* ArtistModel.swift in Sources */,
-				9BE481602604B2D7006DB71D /* Location_NAV_ViewController.swift in Sources */,
-				9B31873F25ED55E2007765CA /* profileRecentModel.swift in Sources */,
-				9B01F2CD25F5FFF200292A5C /* LocationViewController.swift in Sources */,
 				9BF97F3E260F4E0600B9C1F4 /* Slide.swift in Sources */,
 				9B37184425E65A80003A3451 /* Gradi_.swift in Sources */,
 				9B21A7E6261F38DB0049FA9C /* ProcessingOrderTableViewCell.swift in Sources */,
-				9BD1E47625F07B9C004DF8C0 /* OrderScreenViewController.swift in Sources */,
 				9B1491342638718D00EEF105 /* HistoryOrderDetailTableViewCell.swift in Sources */,
 				9B3D7E91261C0F2700CC97E3 /* SurveyButton.swift in Sources */,
-				9B37184C25E672D0003A3451 /* FoodItemScrollTableViewCell.swift in Sources */,
 				9B2BD57025E36E00000A33BB /* Utilities.swift in Sources */,
 				9B3FDB7926306C7D00ABD480 /* Café-Nibm.xcdatamodeld in Sources */,
 				9B2BD57225E37CCB000A33BB /* UHBCustomLabel.swift in Sources */,
 				9B368340261C489400457C84 /* AddCategoryViewController.swift in Sources */,
 				9B21A7E2261F38AD0049FA9C /* NewOrderTableViewCell.swift in Sources */,
-				9B31874125ED62BE007765CA /* profileRecentModel1.swift in Sources */,
 				9B44123325E6AC8C00A0445A /* Try_1_ViewController.swift in Sources */,
-				9B31874525EDFB37007765CA /* CartTableViewCell.swift in Sources */,
 				9B368346261CA7DD00457C84 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

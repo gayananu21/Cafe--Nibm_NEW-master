@@ -16,7 +16,7 @@ import LocalAuthentication
 
 class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocationManagerDelegate{
     
-     private var locationManager: CLLocationManager?
+    private var locationManager: CLLocationManager?
 
     @IBOutlet weak var secoundView: UIView!
     @IBOutlet weak var darkTextLabel: UHBCustomLabel!
@@ -50,6 +50,23 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
            }
        }
     
+    func createSpinnerView() {
+        let child = SpinnerViewController()
+
+        // add the spinner view controller
+        addChild(child)
+        child.view.frame = view.frame
+        view.addSubview(child.view)
+        child.didMove(toParent: self)
+
+        // wait two seconds to simulate some work happening
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            // then remove the spinner view controller
+            child.willMove(toParent: nil)
+            child.view.removeFromSuperview()
+            child.removeFromParent()
+        }
+    }
     
     
     override func viewDidLoad() {
@@ -222,6 +239,9 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
 
     @IBAction func loginClicked(_ sender: Any) {
         
+        createSpinnerView()
+        
+        
         self.errorLabel.alpha = 1
         let email = emailTextField.text ?? ""
             let password = passwordTextField.text ?? ""
@@ -233,18 +253,58 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
                 case .operationNotAllowed:
                     self.errorLabel.text = "Please enable Firebase Sign in method"
                   // Error: Indicates that email and password accounts are not enabled. Enable them in the Auth section of the Firebase console.
+                    let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
+                                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                   
+                                                                            
+
+                                                              }))
+                                                                                  self.present(alert, animated: true, completion: nil)
+
                 case .userDisabled:
                     self.errorLabel.text = "Your account has been disabled by an administrator"
                   // Error: The user account has been disabled by an administrator.
+                    let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
+                                                   alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                      
+                                                                                               
+
+                                                                                 }))
+                                                                                                     self.present(alert, animated: true, completion: nil)
+                    
                 case .wrongPassword:
                     self.errorLabel.text = "The password is invalid or the user does not have a password"
                   // Error: The password is invalid or the user does not have a password.
+                    let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
+                                                   alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                      
+                                                                                               
+
+                                                                                 }))
+                                                                                                     self.present(alert, animated: true, completion: nil)
+                    
                 case .invalidEmail:
                     self.errorLabel.text = "Please enter a valid email address"
                   // Error: Indicates the email address is malformed.
+                    let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
+                                                   alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                      
+                                                                                               
+
+                                                                                 }))
+                                                                                                     self.present(alert, animated: true, completion: nil)
+                    
                 default:
                     self.errorLabel.text = "Unable to Sign up"
                     print("Error: \(error.localizedDescription)")
+                    let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
+                                                   alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                      
+                                                                                               
+
+                                                                                 }))
+                                                                                                     self.present(alert, animated: true, completion: nil)
+                    
                 }
               } else {
                 
@@ -272,36 +332,21 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
                 }
                 if (isUserLoggedIn() == true) {
                     // Show logout page
-                    if CLLocationManager.locationServicesEnabled() {
-                        switch(CLLocationManager.authorizationStatus()) {
-                        case .notDetermined, .restricted, .denied:
-                            print("No access")
-                            
-                            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-                                                              let VC2 = storyBoard.instantiateViewController(withIdentifier: "LOCATION") as! LocationViewController
-                                                      
-                                   self.navigationController?.pushViewController(VC2, animated: true)
-                            
-                           
-                        case .authorizedAlways, .authorizedWhenInUse:
-                            print("Access")
-                            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-                                                              let VC1 = storyBoard.instantiateViewController(withIdentifier: "HOME_TAB") as! Home_Tab_ViewController
+                   
+                   
+                         
+                           let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                           let vc = storyboard.instantiateViewController(withIdentifier: "HOME_TAB")
+                           vc.modalPresentationStyle = .fullScreen
+                           vc.modalTransitionStyle = .crossDissolve
+                           self.present(vc, animated: true)
                            
 
-                             self.navigationController?.navigationBar.alpha = 0
-                            
-                                   self.navigationController?.pushViewController(VC1, animated: true)
                             
 
                             
                             
-                        default:
-                            print("...")
-                        }
-                    } else {
-                        print("Location services are not enabled")
-                    }
+                   
                
                     
                   } else {

@@ -80,6 +80,37 @@ class HistoryOrderDetailViewController: UIViewController,UITableViewDelegate,UIT
            //returning cell
            return cell
        }
+    //printin order by onTapping print button
+    @IBAction func btnTakeScreenShot(_ sender: UIButton) {
+             self.takeScreenshot()
+           
+           let alert = UIAlertController(title: "Success", message: "Order Item History Printed Successfully", preferredStyle: .alert)
+           alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                              
+                                                       
+
+                                         }))
+                                                             self.present(alert, animated: true, completion: nil)
+         }
+        //Order Printing function
+         open func takeScreenshot(_ shouldSave: Bool = true) -> UIImage? {
+             print("takeScreenshot")
+             var screenshotImage :UIImage?
+             let layer = UIApplication.shared.keyWindow!.layer
+             let scale = UIScreen.main.scale
+             UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+             guard let context = UIGraphicsGetCurrentContext() else {return nil}
+             layer.render(in:context)
+             screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
+             UIGraphicsEndImageContext()
+             if let image = screenshotImage, shouldSave {
+                 UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
+             }
+             return screenshotImage
+         }
+          
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

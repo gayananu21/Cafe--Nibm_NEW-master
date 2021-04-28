@@ -64,7 +64,7 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
     
      //list to store all the artist
      var foodList = [FoodModel]()
-     var cartList = [CartModel]()
+     
    
     
    public func numberOfSections(in tableView: UITableView) -> Int {
