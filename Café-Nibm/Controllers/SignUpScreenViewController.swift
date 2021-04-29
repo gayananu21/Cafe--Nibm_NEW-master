@@ -12,6 +12,9 @@ import Firebase
 
 class SignUpScreenViewController: UIViewController, UIScrollViewDelegate {
     
+     var refUsers: DatabaseReference!
+    var user = Auth.auth().currentUser
+    
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var registerButton: RoundButton!
     @IBOutlet weak var rPassLabel: UILabel!
@@ -25,12 +28,17 @@ class SignUpScreenViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
+    
+    
+    var uName = ""
+    var uPhone = ""
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
 
         
-        //Fading animation in signup
+       
+        // MARK: - Fading animation in signup
         
         UIView.animate(withDuration: 0.0, delay: 0.0, options: .curveEaseOut, animations: {
               self.nameLabel.alpha = 0
@@ -157,23 +165,7 @@ class SignUpScreenViewController: UIViewController, UIScrollViewDelegate {
              
     }
     
-   func createSpinnerView() {
-       let child = SpinnerViewController()
-
-       // add the spinner view controller
-       addChild(child)
-       child.view.frame = view.frame
-       view.addSubview(child.view)
-       child.didMove(toParent: self)
-
-       // wait two seconds to simulate some work happening
-       DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-           // then remove the spinner view controller
-           child.willMove(toParent: nil)
-           child.view.removeFromSuperview()
-           child.removeFromParent()
-       }
-   }
+   
     
     
     //Calls this function when the tap is recognized to dismiss keyboard
@@ -185,24 +177,16 @@ class SignUpScreenViewController: UIViewController, UIScrollViewDelegate {
     
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     @IBAction func signupClicked(_ sender: Any) {
-        
-        createSpinnerView()
         
         
         self.errorLabel.alpha = 1
         
         let email = self.emailTextField.text ?? ""
               let password = self.passwordTextField.text ?? ""
+        self.uName = self.nameTextField.text ?? ""
+        self.uPhone = self.phoneTextField.text ?? ""
+     
          
               let cleanedPassword = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
               let cleanedEmail = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
@@ -215,90 +199,117 @@ class SignUpScreenViewController: UIViewController, UIScrollViewDelegate {
                   self.errorLabel.text = "Please enable Firebase Sign in method"
                    // Error: The given sign-in provider is disabled for this Firebase project. Enable it in the Firebase console, under the sign-in method tab of the Auth section.
                     let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
-                                                   alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-                                                                                                      
-                                                                                               
+                                                                      alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                                         
+                                                                                                                  
 
-                                                                                 }))
-                                                                                                     self.present(alert, animated: true, completion: nil)
-                    
+                                                                                                    }))
+                                                                                                                        self.present(alert, animated: true, completion: nil)
                  case .emailAlreadyInUse:
                   self.errorLabel.text = "The email address is already in use by another account"
                    // Error: The email address is already in use by another account.
                     let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
-                                                   alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-                                                                                                      
-                                                                                               
+                                                                      alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                                         
+                                                                                                                  
 
-                                                                                 }))
-                                                                                                     self.present(alert, animated: true, completion: nil)
-                    
+                                                                                                    }))
+                                                                                                                        self.present(alert, animated: true, completion: nil)
                  
                  default:
                   self.errorLabel.text = "Error creating user!"
                      print("Error: \(error.localizedDescription)")
                     let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
-                                                   alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-                                                                                                      
-                                                                                               
+                                                                      alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                                         
+                                                                                                                  
 
-                                                                                 }))
-                                                                                                     self.present(alert, animated: true, completion: nil)
-                    
+                                                                                                    }))
+                                                                                                                        self.present(alert, animated: true, completion: nil)
                  }
                   
                   if Utilities.isPasswordValid(cleanedPassword) == false {
                                                   // Password isn't secure enough
                                                  self.errorLabel.text =  "Please make sure your password is at least 8 characters, contains a special character and a number."
                     let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
-                                                   alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-                                                                                                      
-                                                                                               
+                                                                      alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                                         
+                                                                                                                  
 
-                                                                                 }))
-                                                                                                     self.present(alert, animated: true, completion: nil)
-                    
+                                                                                                    }))
+                                                                                                                        self.present(alert, animated: true, completion: nil)
                                  if Utilities.isValidEmail(cleanedEmail) == false {
                                      // Password isn't secure enough
                                     self.errorLabel.text =  "Please enter a valid email"
                                     let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
-                                                                   alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-                                                                                                                      
-                                                                                                               
+                                                                                      alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                                                         
+                                                                                                                                  
 
-                                                                                                 }))
-                                                                                                                     self.present(alert, animated: true, completion: nil)
-                                    
+                                                                                                                    }))
+                                                                                                                                        self.present(alert, animated: true, completion: nil)
                                  }
                                               }
+                
+                if(self.passwordTextField.text != self.retypePasswordTextField.text){
+                    
+                   // self.errorLabel.text =  "Your password not matching with retype password."
+                    let alert = UIAlertController(title: "ERROR", message: "Your password not matching with retype password", preferredStyle: .alert)
+                                                                      alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                                         
+                                                                                                                  
+
+                                                                                                    }))
+                                                                                                                        self.present(alert, animated: true, completion: nil)
+                    
+                }
+
+                
+                
           
                }
                  
                                    
                              
                else {
-               
+                
+             // MARK: - Saving user data to firebase
+                
+             self.user = Auth.auth().currentUser
+                  let name = self.nameTextField.text ?? ""
                  let newUserInfo = Auth.auth().currentUser
-                 let email = newUserInfo?.email
-                self.phoneLabel.text = newUserInfo? .phoneNumber
-                self.nameLabel.text = newUserInfo? .displayName
+              //  newUserInfo?.displayName = self.nameTextField.text
+               // newUserInfo? .phoneNumber =  self.phoneTextField.text =
+                //self.nameTextField.text = newUserInfo? .displayName
+                
+                self.refUsers = Database.database().reference()
+                                                      
+
+                                                            
+                                                                //adding the artist inside the generated unique key
+                self.refUsers.child("users").child(self.user?.uid ?? "").setValue(["name": self.uName, "phoneNumber": self.uPhone ,"userId": self.user?.uid ?? "", "imageUrl": "default"])
+                
+                
+                
+                             
                 
                   print("User signs up successfully")
                  self.errorLabel.text = "User signs up successfully!"
-                let alert = UIAlertController(title: "Success", message: "Sign Up Successfull. Please Log in to continue.", preferredStyle: .alert)
-                                               alert.addAction(UIAlertAction(title: "Login", style: .default, handler: { action in
-                                                                                                  
-                                                                  
-                                                                                  let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                                                                                        let vc = storyboard.instantiateViewController(withIdentifier: "LOGIN")
-                                                                                        vc.modalPresentationStyle = .fullScreen
-                                                                                        vc.modalTransitionStyle = .crossDissolve
-                                                                                        self.present(vc, animated: true)
-                                                                                        
-
-                                                                             }))
-                                                                                                 self.present(alert, animated: true, completion: nil)
                 
+                let alert = UIAlertController(title: "Success", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
+                                                                  alert.addAction(UIAlertAction(title: "Login", style: .default, handler: { action in
+                                                                                                                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                                                                                                            let vc = storyboard.instantiateViewController(withIdentifier: "LOGIN")
+                                                                                                                            vc.modalPresentationStyle = .fullScreen
+                                                                                                                            vc.modalTransitionStyle = .crossDissolve
+                                                                                                                            self.present(vc, animated: true)
+                                                                                                                            
+                                                                                                              
+
+                                                                                                }))
+                                                                                                                    self.present(alert, animated: true, completion: nil)
+                
+               
                }
              }
     }
@@ -307,7 +318,8 @@ class SignUpScreenViewController: UIViewController, UIScrollViewDelegate {
 
 
 
-//Here we can add bottom line to UITextField
+
+// MARK: - Here we can add bottom line to UITextField
 
 extension UITextField {
     func addBottomBorder1(){

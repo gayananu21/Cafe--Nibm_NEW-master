@@ -700,6 +700,12 @@ class EditFoodItemViewController:UIViewController, UIImagePickerControllerDelega
                 }
                 let urlString = url.absoluteString
                 
+                let refUp = Database.database().reference()
+                
+                
+                let updateStatus = refUp.child("Foods/\(self.editFoodKey)")
+                updateStatus.updateChildValues(["foodImage": "\(urlString)"])
+                
                 DispatchQueue.main.async {
                     
                                self.featuredImage.image = image
@@ -781,13 +787,20 @@ class EditFoodItemViewController:UIViewController, UIImagePickerControllerDelega
                     let key = editFoodKey
                                        
                                        
-                                                          let alert = UIAlertController(title: "Key", message: "Key: \(key)", preferredStyle: UIAlertController.Style.alert)
+                                                          let alert = UIAlertController(title: "Success", message: "Food Item Edited Successfully.", preferredStyle: UIAlertController.Style.alert)
 
-                                                                      // add the actions (buttons)
-                                                          alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: nil))
-                                                                                                  
-                                                                      // show the alert
-                                                              self.present(alert, animated: true, completion: nil)
+                                                         alert.addAction(UIAlertAction(title: "View Store", style: .default, handler: { action in
+                                                                                                                                                                       
+                                                                                                                                       
+                                                                                                                                                       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                                                                                                                                                             let vc = storyboard.instantiateViewController(withIdentifier: "HOME_TAB")
+                                                                                                                                                             vc.modalPresentationStyle = .fullScreen
+                                                                                                                                                             vc.modalTransitionStyle = .crossDissolve
+                                                                                                                                                             self.present(vc, animated: true)
+                                                                                                                                                             
+
+                                                                                                                                                  }))
+                                                                                                                                                                      self.present(alert, animated: true, completion: nil)
                    
                     
                     

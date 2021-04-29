@@ -40,12 +40,10 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         
         else{
             
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                  let vc = storyboard.instantiateViewController(withIdentifier: "LOGIN")
-                  vc.modalPresentationStyle = .fullScreen
-                  vc.modalTransitionStyle = .crossDissolve
-                  self.present(vc, animated: true)
+           
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "LOGIN") as! LoginScreenViewController
+            self.navigationController!.pushViewController(newViewController, animated: true)
             
 
             

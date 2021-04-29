@@ -10,11 +10,11 @@ class Slide: UIView {
     
     @IBAction func loginClick(_ sender: Any) {
         
-                labelTitle.textColor = .red
+        labelTitle.textColor = .red
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let setViewController = mainStoryboard.instantiateViewController(withIdentifier: "LOGIN") as! LoginScreenViewController
+        let setViewController = mainStoryboard.instantiateViewController(withIdentifier: "LOGIN_NAV") as! LoginScreenViewController
         
         
         let rootViewController = self.window!.rootViewController

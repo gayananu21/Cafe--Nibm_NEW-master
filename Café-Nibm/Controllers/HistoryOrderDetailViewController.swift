@@ -82,32 +82,66 @@ class HistoryOrderDetailViewController: UIViewController,UITableViewDelegate,UIT
        }
     //printin order by onTapping print button
     @IBAction func btnTakeScreenShot(_ sender: UIButton) {
-             self.takeScreenshot()
+            
+        printorder()
            
-           let alert = UIAlertController(title: "Success", message: "Order Item History Printed Successfully", preferredStyle: .alert)
-           alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
-                                                              
-                                                       
+          
+         }
+        func printorder(){
+               
+               print("takeScreenshot")
+                        var screenshotImage :UIImage?
+                        let layer = UIApplication.shared.keyWindow!.layer
+                        let scale = UIScreen.main.scale
+                        UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
+               let context = UIGraphicsGetCurrentContext() ?? "" as! CGContext
+                        layer.render(in:context)
+                        screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
+                        UIGraphicsEndImageContext()
+                       
+                         
+               
+               let printController = UIPrintInteractionController.shared
+               
+               let printInfo = UIPrintInfo(dictionary: nil)
+               
+               printInfo.jobName = "Printing Order ids"
+               printInfo.outputType = .photo
+               
+               
+               
+               printController.printInfo = printInfo
+               printController.printingItem = screenshotImage
+               
+               printController.present(animated: true) { (_, isPrinted, error) in
+                   if error == nil {
+                       if isPrinted {
+                           let alert = UIAlertController(title: "Success", message: "Order History Printed Successfully.", preferredStyle: .alert)
+                                     alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                        
+                                                                                 
 
-                                         }))
-                                                             self.present(alert, animated: true, completion: nil)
-         }
-        //Order Printing function
-         open func takeScreenshot(_ shouldSave: Bool = true) -> UIImage? {
-             print("takeScreenshot")
-             var screenshotImage :UIImage?
-             let layer = UIApplication.shared.keyWindow!.layer
-             let scale = UIScreen.main.scale
-             UIGraphicsBeginImageContextWithOptions(layer.frame.size, false, scale);
-             guard let context = UIGraphicsGetCurrentContext() else {return nil}
-             layer.render(in:context)
-             screenshotImage = UIGraphicsGetImageFromCurrentImageContext()
-             UIGraphicsEndImageContext()
-             if let image = screenshotImage, shouldSave {
-                 UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil)
-             }
-             return screenshotImage
-         }
+                                                                   }))
+                                                                                       self.present(alert, animated: true, completion: nil)
+                           print("Image is printed")
+                       }
+                       else{
+                           print("Image is not printed")
+                           
+                           let alert = UIAlertController(title: "Error", message: "Error While Printing Order History.", preferredStyle: .alert)
+                                                        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                                                                                                           
+                                                                                                    
+
+                                                                                      }))
+                                                                                                          self.present(alert, animated: true, completion: nil)
+                       }
+                   }
+               }
+               
+           }
+    
+    
           
     
     

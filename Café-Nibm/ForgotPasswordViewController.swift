@@ -13,45 +13,41 @@ import Firebase
 
 class ForgotPasswordViewController: UIViewController {
 
-    @IBOutlet weak var emailTextField: UITextField!
-    
-    @IBOutlet weak var errorLabel: UILabel!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+            @IBOutlet weak var emailTextField: UITextField!
+            
+            @IBOutlet weak var errorLabel: UILabel!
+            
+            override func viewDidLoad() {
+            super.viewDidLoad()
+                
             self.navigationController?.navigationBar.alpha = 1
 
-        // Do any additional setup after loading the view.
-         self.emailTextField.addBottomBorder()
-        
-        
-        //Looks for single or multiple taps.
-                    let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+            // Do any additional setup after loading the view.
+            self.emailTextField.addBottomBorder()
+                
+                
+            //Looks for single or multiple taps.
+            let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
 
-                          //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
-                          //tap.cancelsTouchesInView = false
+                                  //Uncomment the line below if you want the tap not not interfere and cancel other interactions.
+                                  //tap.cancelsTouchesInView = false
 
-                    view.addGestureRecognizer(tap)
-        
+            view.addGestureRecognizer(tap)
+                
         
     }
     
 
-    /*
-    // MARK: - Navigation
+  
+    // MARK: - Dismissing keyboard when tap on screen
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     @objc func dismissKeyboard() {
                 //Causes the view (or one of its embedded text fields) to resign the first responder status.
                 view.endEditing(true)
             }
+    
+    // MARK: - Creating a spinng view
+
     func createSpinnerView() {
           let child = SpinnerViewController()
 

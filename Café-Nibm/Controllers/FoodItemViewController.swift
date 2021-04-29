@@ -37,7 +37,9 @@ class FoodItemViewController: UIViewController {
     var fDescription = " "
     var fPrice = " "
     var foodKey = ""
+    var fDiscount = ""
     
+    @IBOutlet weak var foodDiscount: RoundLabel!
     @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var foodDescription: RoundLabel!
     @IBOutlet weak var noFoods: UITextField!
@@ -86,6 +88,7 @@ class FoodItemViewController: UIViewController {
             foodName.text = fName
             foodDescription.text = fDescription
             foodPrice.text = fPrice
+            foodDiscount.text = fDiscount 
             
     
             

@@ -284,10 +284,10 @@ class AdminOrdersViewController:  UIViewController , UITableViewDelegate , UITab
          case processingOrdersTableView:
             
             //creating a cell using the custom class
-                    let cell = tableView.dequeueReusableCell(withIdentifier: "PROCESSING_ORDERS", for: indexPath) as! ProcessingOrderTableViewCell
+                    let cellP = tableView.dequeueReusableCell(withIdentifier: "PROCESSING_ORDERS", for: indexPath) as! ProcessingOrderTableViewCell
                     
-                    cell.delegate = self
-                    cell.Index = indexPath
+                    cellP.delegate = self
+                    cellP.Index = indexPath
                   
                     
                     //the artist object
@@ -298,8 +298,8 @@ class AdminOrdersViewController:  UIViewController , UITableViewDelegate , UITab
                     
                     //adding values to labels
                     
-                    cell.orderId.text = cart.orderId
-                    cell.userName.text = cart.customerName
+                    cellP.orderId.text = cart.orderId
+                    cellP.userName.text = cart.customerName
                     
                     
                     refGetUserImage = Database.database().reference().child("users");
@@ -331,10 +331,10 @@ class AdminOrdersViewController:  UIViewController , UITableViewDelegate , UITab
                                                                                          userImageUrl = userImage as! String
                                                                                            
                                                                                            
-                                                                                           cell.userImage.kf.indicatorType = .activity
-                                                                                           cell.userImage.kf.setImage(with: URL(string:String(userImageUrl)), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
+                                                                                           cellP.userImage.kf.indicatorType = .activity
+                                                                                           cellP.userImage.kf.setImage(with: URL(string:String(userImageUrl)), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
                                                                                                        
-                                                                                                      cell.userImage.heightAnchor.constraint(equalToConstant: 127).isActive = true
+                                                                                                      cellP.userImage.heightAnchor.constraint(equalToConstant: 127).isActive = true
                                                                                            
                                             }
                                            
@@ -356,7 +356,7 @@ class AdminOrdersViewController:  UIViewController , UITableViewDelegate , UITab
                     
             
             //returning cell
-            return cell
+            return cellP
             
             
             

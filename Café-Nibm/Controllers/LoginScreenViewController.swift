@@ -79,6 +79,10 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
         
         super.viewDidLoad()
         
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        let backButton = UIBarButtonItem(title: "", style: .plain, target: navigationController, action: nil)
+        navigationItem.leftBarButtonItem = backButton
+        
         if NetworkMonitor.shared.isConnected == false {
             
             print("No network")
@@ -208,11 +212,10 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
                   } else if let result = result {
                     print("Firebase login succeeds")
                   
+                  
                   }
                 }
-                
-              
-                
+        
                 
             }
         }
@@ -254,7 +257,7 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.setNavigationBarHidden(true, animated: animated)
+        navigationController?.setNavigationBarHidden(false, animated: animated)
         
         
     }

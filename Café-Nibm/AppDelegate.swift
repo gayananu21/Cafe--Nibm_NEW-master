@@ -12,6 +12,7 @@ import CoreData
 import UserNotifications
 import FBSDKCoreKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -25,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         NetworkMonitor.shared.startMonitoring()
         FirebaseApp.configure()
+        
+        
          //retrieve value from local store, if value doesn't exist then false is returned
                 hasAlreadyLaunched = UserDefaults.standard.bool(forKey: "hasAlreadyLaunched")
                 
