@@ -15,8 +15,11 @@ class HistoryOrderDetailViewController: UIViewController,UITableViewDelegate,UIT
     
 //reference from admin account view controller
  var orderId = ""
+ var total = Int()
 
     
+    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var noItemsLabel: UILabel!
     
     
     @IBOutlet weak var cartTableView: UITableView!
@@ -61,6 +64,8 @@ class HistoryOrderDetailViewController: UIViewController,UITableViewDelegate,UIT
         //getting the artist of selected position
                cart = cartList[indexPath.row]
            
+        let listCount = String(cartList.count)
+        self.noItemsLabel.text = "\(listCount)"
           
            //adding values to labels
        cell.foodImage.kf.indicatorType = .activity
@@ -184,11 +189,19 @@ class HistoryOrderDetailViewController: UIViewController,UITableViewDelegate,UIT
                                          let cartObject = carts.value as? [String: AnyObject]
                                          let cartItemPrice  = cartObject?["foodPrice"]
                                          let cartNoUnits  = cartObject?["noFoods"]
-                                         //let cartAmount = cartObject?["amount"]
+                                         let cartAmount = cartObject?["amount"]
                                          let cartFoodName = cartObject?["foodName"]
                                          let cartImage = cartObject?["foodImage"]
                                        
                                        //self.total += cartAmount as! Int
+                                        
+                                         let stringfoodTotal = cartAmount as! String
+                                         let foodTotal = Int(stringfoodTotal)
+                                                                             
+                                          self.total = self.total + (foodTotal ?? 0)
+                                                                            self.totalLabel.text = "Rs. \(self.total)"
+                                                                             
+                                        
                                      
                                       
                                         if(cartFoodName != nil){

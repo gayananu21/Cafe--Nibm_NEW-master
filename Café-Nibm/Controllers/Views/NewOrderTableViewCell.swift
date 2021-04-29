@@ -33,9 +33,9 @@ class NewOrderTableViewCell: UITableViewCell {
         acceptButton.alpha = 1
         
         
-        rejectButton.layer.borderWidth = 0.5
+               rejectButton.layer.borderWidth = 0.5
                rejectButton.layer.masksToBounds = false
-        rejectButton.layer.borderColor = UIColor.red.cgColor
+               rejectButton.layer.borderColor = UIColor.red.cgColor
                rejectButton.layer.cornerRadius = rejectButton.frame.height/2
                rejectButton.clipsToBounds = true
                rejectButton.alpha = 1

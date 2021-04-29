@@ -81,13 +81,20 @@ class ProcessingOrderTableViewCell: UITableViewCell {
         selectedButton.alpha = 1
         
         
-        readyButton.layer.borderWidth = 0.5
+               readyButton.layer.borderWidth = 0.5
                readyButton.layer.masksToBounds = false
-        readyButton.layer.borderColor = UIColor.black.cgColor
+               readyButton.layer.borderColor = UIColor.black.cgColor
                readyButton.layer.cornerRadius = readyButton.frame.height/2
                readyButton.clipsToBounds = true
                readyButton.alpha = 1
         
+               userImage.layer.borderWidth = 0.5
+               userImage.layer.masksToBounds = false
+               userImage.layer.borderColor = UIColor.black.cgColor
+               userImage.layer.cornerRadius = userImage.frame.height/2
+               userImage.clipsToBounds = true
+               userImage.alpha = 1
+               
     }
 
 }

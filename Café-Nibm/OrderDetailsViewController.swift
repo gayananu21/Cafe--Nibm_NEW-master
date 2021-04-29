@@ -22,18 +22,20 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
     var userName = ""
     var userId = ""
     var status = ""
+    var total = Int()
     
     var customerNumber = ""
     
     
+    @IBOutlet weak var totalAmount: UILabel!
     @IBOutlet weak var cartTableView: UITableView!
     
-     var refCarts: DatabaseReference!
-     var refGetProcessingOrders: DatabaseReference!
+    var refCarts: DatabaseReference!
+    var refGetProcessingOrders: DatabaseReference!
     var refGetFoodImage: DatabaseReference!
     var refGetUserPhoneNumber: DatabaseReference!
     
-     var cartList = [OrderDetailMenu]()
+    var cartList = [OrderDetailMenu]()
     
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -71,15 +73,15 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
           
            //adding values to labels
        cell.foodImage.kf.indicatorType = .activity
-        cell.foodImage.kf.setImage(with: URL(string:String(cart.foodImage ?? "")), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
-           cell.noItems.text = cart.noItems
-        cell.foodPrice.text = cart.price
-        cell.foodName.text = cart.name
+       cell.foodImage.kf.setImage(with: URL(string:String(cart.foodImage ?? "")), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
+       cell.noItems.text = cart.noItems
+       cell.foodPrice.text = cart.price
+       cell.foodName.text = cart.name
         
-        cell.foodImage.kf.indicatorType = .activity
-                    cell.foodImage.kf.setImage(with: URL(string:String(cart.foodImage ?? "")), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
+       cell.foodImage.kf.indicatorType = .activity
+       cell.foodImage.kf.setImage(with: URL(string:String(cart.foodImage ?? "")), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
                     
-                   cell.foodImage.heightAnchor.constraint(equalToConstant: 127).isActive = true
+       cell.foodImage.heightAnchor.constraint(equalToConstant: 127).isActive = true
            
            
            
@@ -91,6 +93,7 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
+           self.total = 0
         
            self.customerStatus.layer.borderWidth = 0.5
            self.customerStatus.layer.masksToBounds = false
@@ -105,13 +108,13 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
 
         // Do any additional setup after loading the view.
         
-        cartTableView.delegate = self
+                      cartTableView.delegate = self
                       cartTableView.dataSource = self
         
         
         refGetUserPhoneNumber = Database.database().reference().child("users");
                            
-                          
+       // MARK: - Retriving customer phone number
                            
         let query_process_Phone = refGetUserPhoneNumber.queryOrdered(byChild: "userId").queryEqual(toValue: "\(userId)")
                            query_process_Phone.observe(DataEventType.value, with: { (snapshot) in
@@ -172,6 +175,13 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
                                          let cartAmount = cartObject?["amount"]
                                          let cartFoodName = cartObject?["foodName"]
                                          let cartImage = cartObject?["foodImage"]
+                                        
+                                       let stringfoodTotal = cartAmount as! String
+                                       let foodTotal = Int(stringfoodTotal)
+                                        
+                                        self.total = self.total + (foodTotal ?? 0)
+                                        self.totalAmount.text = "Rs. \(self.total)"
+                                        
                                        
                                        //self.total += cartAmount as! Int
                                      
@@ -185,7 +195,7 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
                                                //appending it to list
                                                self.cartList.append(cart)
                                             
-                                             self.cartTableView.reloadData()
+                                               self.cartTableView.reloadData()
                                             
                                         }
                                          
@@ -209,7 +219,7 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
         
         
         //getting a reference to the node artists
-                   refGetProcessingOrders = Database.database().reference().child("order status");
+        refGetProcessingOrders = Database.database().reference().child("order status");
                
                
                //observing the data changes
@@ -272,7 +282,7 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
         
         
         
-        
+        // MARK: - Checking customer order status
         
         if (self.status == "pending"){
             
@@ -370,6 +380,7 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
 
     }
     
+    // MARK: - Making calls to a customer
 
     @IBAction func onCallButton(_ sender: Any) {
         
@@ -379,14 +390,6 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
         UIApplication.shared.open(url!)
         
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+   
 
 }

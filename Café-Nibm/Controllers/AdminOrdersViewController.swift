@@ -77,7 +77,8 @@ class AdminOrdersViewController:  UIViewController , UITableViewDelegate , UITab
            
            switch tableView {
           
-    
+    // MARK: - Filtering table view by type to select rows
+            
            case readyOrdersTableView:
               
                   if(indexPath.row == indexPath.row){

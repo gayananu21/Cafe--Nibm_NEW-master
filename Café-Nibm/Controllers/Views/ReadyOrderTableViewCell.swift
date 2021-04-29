@@ -78,12 +78,19 @@ class ReadyOrderTableViewCell: UITableViewCell {
         selectedButton.alpha = 1
         
         
-        finishButton.layer.borderWidth = 0.5
+               finishButton.layer.borderWidth = 0.5
                finishButton.layer.masksToBounds = false
-        finishButton.layer.borderColor = UIColor.black.cgColor
+               finishButton.layer.borderColor = UIColor.black.cgColor
                finishButton.layer.cornerRadius = finishButton.frame.height/2
                finishButton.clipsToBounds = true
                finishButton.alpha = 1
+        
+               userImage.layer.borderWidth = 0.5
+               userImage.layer.masksToBounds = false
+               userImage.layer.borderColor = UIColor.black.cgColor
+               userImage.layer.cornerRadius = userImage.frame.height/2
+               userImage.clipsToBounds = true
+               userImage.alpha = 1
                
         
         
