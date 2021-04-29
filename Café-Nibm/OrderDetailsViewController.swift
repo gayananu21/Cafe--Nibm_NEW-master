@@ -29,6 +29,7 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
     
     @IBOutlet weak var totalAmount: UILabel!
     @IBOutlet weak var cartTableView: UITableView!
+    @IBOutlet weak var etaLabel: UILabel!
     
     var refCarts: DatabaseReference!
     var refGetProcessingOrders: DatabaseReference!
@@ -94,6 +95,7 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
         super.viewDidLoad()
         
            self.total = 0
+        self.etaLabel.alpha = 0
         
            self.customerStatus.layer.borderWidth = 0.5
            self.customerStatus.layer.masksToBounds = false
@@ -262,7 +264,7 @@ class OrderDetailsViewController: UIViewController,  UITableViewDelegate, UITabl
                                                             if(intCusDistance<20 && self.status == "ready"){
                                                                 
                                                                 
-                                                                
+                                                                 self.etaLabel.alpha = 1
                                                                 self.customerStatus.text = "Arriving"
                                                                 self.customerStatus.backgroundColor = #colorLiteral(red: 0.9372549057, green: 0.3490196168, blue: 0.1921568662, alpha: 1)
                                                                 self.customerStatus.textColor = .white
