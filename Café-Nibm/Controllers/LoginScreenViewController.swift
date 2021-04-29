@@ -178,6 +178,13 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
    
     
     func loginButton(_ loginButton: FBLoginButton, didCompleteWith result: LoginManagerLoginResult?, error: Error?) {
+        
+
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "HOME_TAB")
+        vc.modalPresentationStyle = .fullScreen
+        vc.modalTransitionStyle = .crossDissolve
+        self.present(vc, animated: true)
         // Facebook graph request to retrieve the user email & name
         let token = AccessToken.current?.tokenString
         let params = ["fields": "first_name, last_name, email"]
@@ -188,6 +195,8 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
                 print("Facebook graph request error: \(err)")
             } else {
                 print("Facebook graph request successful!")
+
+
 
                 guard let json = result as? NSDictionary else { return }
                 if let email = json["email"] as? String {
@@ -211,6 +220,9 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
                     print("Firebase auth fails with error: \(error.localizedDescription)")
                   } else if let result = result {
                     print("Firebase login succeeds")
+                    
+                    
+                    
                   
                   
                   }
@@ -297,7 +309,7 @@ class LoginScreenViewController: UIViewController, UIScrollViewDelegate, CLLocat
               if let error = error as? NSError {
                 switch AuthErrorCode(rawValue: error.code) {
                 case .operationNotAllowed:
-                    self.errorLabel.text = "Please enable Firebase Sign in method"
+                    self.errorLabel.text = "Sign in to this app temporily disabled by administrator. Please try again later."
                   // Error: Indicates that email and password accounts are not enabled. Enable them in the Auth section of the Firebase console.
                     let alert = UIAlertController(title: "ERROR", message: "\(self.errorLabel.text ?? "")", preferredStyle: .alert)
                                 alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in

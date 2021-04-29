@@ -1,5 +1,6 @@
 import UIKit
 import Lottie
+import CoreData
 
 
 class OnboardingViewController: UIViewController, UIScrollViewDelegate {
@@ -30,6 +31,9 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+    
         
         if(!appDelegate.hasAlreadyLaunched){
             

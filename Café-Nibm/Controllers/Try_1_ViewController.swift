@@ -242,6 +242,29 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        var CurrentDate = NSDate()
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeZone = NSTimeZone() as TimeZone
+        dateFormatter.dateFormat = "ccc"
+
+        let Firday = dateFormatter.string(from: CurrentDate as Date)
+        
+        let isFriday = "Fri"
+        
+        
+        if Firday == isFriday {
+            
+            let notificationType = "Its WeekEnd! Dont forget to add discount for special weekend foods."
+            let alertTitle = "Happy WeekEnd"
+                                   
+            self.appDelegate?.promoNotifications(notificationType: notificationType, alertTitle: alertTitle)
+
+        }
+        
+       
+     
         //configureTitleLabel()
         configureStackView()
      
