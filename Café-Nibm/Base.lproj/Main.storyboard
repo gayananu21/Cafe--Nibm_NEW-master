@@ -117,7 +117,7 @@
                                                 </constraints>
                                             </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="c1 copy" translatesAutoresizingMaskIntoConstraints="NO" id="iJz-bH-A02">
-                                                <rect key="frame" x="120" y="0.0" width="135" height="125"/>
+                                                <rect key="frame" x="120" y="0.0" width="135" height="125.00000000000011"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM CAFE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5D-cx-sgL" customClass="UHBCustomLabel" customModule="Cafe__Manager" customModuleProvider="target">
@@ -975,7 +975,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="930"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addCU1-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="u7S-rJ-0mW">
-                                                <rect key="frame" x="66" y="-28" width="243" height="182"/>
+                                                <rect key="frame" x="66" y="-28" width="243" height="182.00000000000006"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="182" id="XI1-hm-s6a"/>
@@ -1448,7 +1448,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1475"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addCU1-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="q9K-LS-lJu">
-                                                <rect key="frame" x="67.5" y="1" width="240" height="128"/>
+                                                <rect key="frame" x="67.5" y="1" width="240" height="128.00000000000006"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="240" id="rYU-nw-pr1"/>
                                                     <constraint firstAttribute="height" constant="128" id="tS9-hb-PTv"/>
@@ -1856,7 +1856,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1700"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addCU1-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="AG0-sB-W8k">
-                                                <rect key="frame" x="67.5" y="1" width="240" height="128"/>
+                                                <rect key="frame" x="67.5" y="1" width="240" height="128.00000000000006"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="GWn-jo-BAr"/>
                                                     <constraint firstAttribute="width" constant="240" id="spq-5e-KnH"/>
@@ -4071,7 +4071,7 @@
                                                 </prototypes>
                                             </tableView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addCU1-removebg-preview" translatesAutoresizingMaskIntoConstraints="NO" id="8M6-fR-VXd">
-                                                <rect key="frame" x="-480.5" y="336" width="1336" height="128"/>
+                                                <rect key="frame" x="-146.5" y="336" width="668" height="128.00000000000006"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="128" id="qV4-Rd-H0E"/>
                                                 </constraints>
