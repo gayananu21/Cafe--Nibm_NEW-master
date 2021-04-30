@@ -168,8 +168,23 @@ class AddCategoryViewController: UIViewController, UITableViewDelegate, UITableV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if NetworkMonitor.shared.isConnected == false {
+                  
+                  print("No network")
+                  
+                  let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                                                                   let VC1 = storyBoard.instantiateViewController(withIdentifier: "NO_NETWORK") as! NoNetworkViewController
+                                             
+                                 
+                                 
+                                 
 
-        // Do any additional setup after loading the view.
+                                                                     
+                                        
+                                        self.navigationController?.pushViewController(VC1, animated: true)
+              }
+              
         
         //As we know that container is set up in the AppDelegates so we need to refer that container.
                 guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }

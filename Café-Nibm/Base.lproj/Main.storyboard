@@ -11,7 +11,7 @@
         <!--N I B M     C A F E Login-->
         <scene sceneID="O9q-TG-1s6">
             <objects>
-                <viewController storyboardIdentifier="LOGIN" id="Tm9-Q7-C85" userLabel="N I B M     C A F E Login" customClass="LoginScreenViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LOGIN" id="Tm9-Q7-C85" userLabel="N I B M     C A F E Login" customClass="LoginScreenViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mJL-J4-JHz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,7 +41,7 @@
                                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApU-bI-Akm" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ApU-bI-Akm" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="254.5" width="335" height="65"/>
                                                         <color key="backgroundColor" red="0.26666666666666666" green="0.47843137254901957" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
@@ -70,7 +70,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgu-Jt-fQB" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgu-Jt-fQB" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="424.5" width="335" height="64.5"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                         <state key="normal" title="FORGOT PASSWORD">
@@ -85,7 +85,7 @@
                                                             <segue destination="dtH-Cz-haz" kind="show" id="8Oy-6g-GeR"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccb-n3-g8u" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccb-n3-g8u" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="509" width="335" height="65"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                         <state key="normal" title="SIGN UP">
@@ -120,7 +120,7 @@
                                                 <rect key="frame" x="120" y="0.0" width="135" height="125"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM CAFE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5D-cx-sgL" customClass="UHBCustomLabel" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM CAFE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5D-cx-sgL" customClass="UHBCustomLabel" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="67.5" y="125" width="240" height="39"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                 <nil key="textColor"/>
@@ -131,7 +131,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM CAFE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7Z-tz-0O0" customClass="UHBCustomLabel" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIBM CAFE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u7Z-tz-0O0" customClass="UHBCustomLabel" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="68" y="125" width="240" height="39"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                                 <nil key="textColor"/>
@@ -202,7 +202,7 @@
         <!--Sign Up-->
         <scene sceneID="dpT-Vw-g6z">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Aup-8E-xRg" customClass="SignUpScreenViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Aup-8E-xRg" customClass="SignUpScreenViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x3a-SY-2BF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -277,7 +277,7 @@
                                                         <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhD-HR-uF0" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BhD-HR-uF0" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="457.5" width="335" height="36.5"/>
                                                         <color key="backgroundColor" red="0.047227970229999999" green="0.35217613269999998" blue="0.65868892769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -410,7 +410,7 @@
         <!--Forgot Password-->
         <scene sceneID="xgT-AN-mOb">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="dtH-Cz-haz" customClass="ForgotPasswordViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="dtH-Cz-haz" customClass="ForgotPasswordViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ROI-GI-IDo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -435,7 +435,7 @@
                                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvZ-ms-tBn" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rvZ-ms-tBn" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="57" y="164.5" width="261" height="43"/>
                                                 <color key="backgroundColor" red="0.052858855429999997" green="0.4083006139" blue="0.77197017769999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -502,7 +502,7 @@
         <!--Food Item View Controller-->
         <scene sceneID="eny-WF-3Gr">
             <objects>
-                <viewController storyboardIdentifier="FOOD_ITEM" id="6uU-8c-Fmj" customClass="FoodItemViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FOOD_ITEM" id="6uU-8c-Fmj" customClass="FoodItemViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2i1-4H-QzB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -661,7 +661,7 @@
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zTc-07-W54">
                                                                 <rect key="frame" x="207.5" y="0.0" width="157.5" height="145"/>
                                                                 <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30% OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8j-oC-hrL" customClass="RoundLabel" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30% OFF" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8j-oC-hrL" customClass="RoundLabel" customModule="Cafe__Manager" customModuleProvider="target">
                                                                         <rect key="frame" x="40" y="0.0" width="115.5" height="45"/>
                                                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
@@ -713,7 +713,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3z-1V-27C" customClass="RoundLabel" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3z-1V-27C" customClass="RoundLabel" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="20" y="385" width="335" height="149"/>
                                                 <color key="backgroundColor" red="0.92496827411167515" green="0.92496827411167515" blue="0.92496827411167515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <string key="text">A hamburger (also burger for short) is a sandwich consisting of one or more cooked patties of ground meat, usually beef, placed inside a sliced bread roll or bun.</string>
@@ -754,7 +754,7 @@
                                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mty-Yi-VG1">
                                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="115"/>
                                                                         <subviews>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ot-Bf-NFJ" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Ot-Bf-NFJ" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="112" height="115"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <state key="normal" title="RICE_CURRY"/>
@@ -771,7 +771,7 @@
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </button>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0W-06-cRj" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0W-06-cRj" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                                                 <rect key="frame" x="122" y="0.0" width="112" height="115"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <state key="normal" title="BEVERAGES"/>
@@ -788,7 +788,7 @@
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </button>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3v-q4-fCF" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3v-q4-fCF" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                                                 <rect key="frame" x="244" y="0.0" width="112" height="115"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <state key="normal" title="BAKERY"/>
@@ -805,7 +805,7 @@
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </button>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TR-eP-fiF" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3TR-eP-fiF" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                                                 <rect key="frame" x="366" y="0.0" width="112" height="115"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <state key="normal" title="STREET FOOD"/>
@@ -822,7 +822,7 @@
                                                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </button>
-                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smk-X6-wAS" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="smk-X6-wAS" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                                                 <rect key="frame" x="488" y="0.0" width="112" height="115"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <state key="normal" title="APPETIZERS"/>
@@ -963,7 +963,7 @@
         <!--AddCategory View Controller Scene-->
         <scene sceneID="Zh7-wq-TII">
             <objects>
-                <viewController storyboardIdentifier="ADD_CATEGORY" id="vy9-3Q-2uN" userLabel="AddCategory View Controller Scene" customClass="AddCategoryViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ADD_CATEGORY" id="vy9-3Q-2uN" userLabel="AddCategory View Controller Scene" customClass="AddCategoryViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mc2-FZ-o9T">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1000,7 +1000,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lQt-gZ-LOk">
                                                 <rect key="frame" x="60" y="257" width="255" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvF-T3-w8E" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvF-T3-w8E" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
                                                         <color key="backgroundColor" red="0.20392156859999999" green="0.19215686269999999" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -1019,7 +1019,7 @@
                                                             <action selector="handleSelection:" destination="vy9-3Q-2uN" eventType="touchUpInside" id="a3X-Kb-Zu8"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rm4-ZV-bQf" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rm4-ZV-bQf" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="ZVD-7Y-tPr"/>
@@ -1044,7 +1044,7 @@
                                                             <action selector="colorsTapped:" destination="vy9-3Q-2uN" eventType="touchUpInside" id="iLp-rm-Ga2"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTK-7w-vPq" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTK-7w-vPq" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="IFB-1c-vvB"/>
@@ -1069,7 +1069,7 @@
                                                             <action selector="colorsTapped:" destination="vy9-3Q-2uN" eventType="touchUpInside" id="KUt-U3-GDD"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIW-Vt-Kyk" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIW-Vt-Kyk" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="VWQ-cO-ssO"/>
@@ -1094,7 +1094,7 @@
                                                             <action selector="colorsTapped:" destination="vy9-3Q-2uN" eventType="touchUpInside" id="ub1-qZ-OBd"/>
                                                         </connections>
                                                     </button>
-                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsW-vV-e3h" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsW-vV-e3h" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="255" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="Ogp-Xo-EqR"/>
@@ -1139,7 +1139,7 @@
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXx-TW-7UH" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXx-TW-7UH" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="102.5" y="395" width="170" height="50"/>
                                                 <color key="backgroundColor" red="0.20545544207104821" green="0.29018618621110354" blue="0.69152522208121825" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1163,17 +1163,17 @@
                                                 <rect key="frame" x="0.0" y="595" width="375" height="315"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CATEGORY_CELL" rowHeight="95" id="BWS-yS-7hb" customClass="CategoryTableViewCell" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CATEGORY_CELL" rowHeight="95" id="BWS-yS-7hb" customClass="CategoryTableViewCell" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="375" height="95"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BWS-yS-7hb" id="d5r-4n-ZHf">
                                                             <rect key="frame" x="0.0" y="0.0" width="375" height="95"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeH-DJ-3UC" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aeH-DJ-3UC" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                                     <rect key="frame" x="10" y="10" width="355" height="75"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAKERY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vA4-ME-6oT" customClass="GradientViewLabel" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                        <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BAKERY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vA4-ME-6oT" customClass="GradientViewLabel" customModule="Cafe__Manager" customModuleProvider="target">
                                                                             <rect key="frame" x="67.5" y="21.5" width="220" height="32"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="220" id="PZ9-mp-Gcr"/>
@@ -1246,7 +1246,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="ta0-yN-MLG"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NS4-Rs-59g" customClass="GradientViewLabel" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NS4-Rs-59g" customClass="GradientViewLabel" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="10" y="557" width="12" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="12" id="9xs-o5-24a"/>
@@ -1264,7 +1264,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9c-Jv-Cj0" customClass="GradientViewLabel" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9c-Jv-Cj0" customClass="GradientViewLabel" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="353" y="557" width="12" height="38"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="12" id="k9f-3X-pF4"/>
@@ -1436,7 +1436,7 @@
         <!--Add Menu Food View Controller-->
         <scene sceneID="BG8-Wf-af6">
             <objects>
-                <viewController storyboardIdentifier="ADD_MENU_FOOD" id="I9A-pJ-iBd" customClass="AddMenuFoodViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ADD_MENU_FOOD" id="I9A-pJ-iBd" customClass="AddMenuFoodViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cgw-kd-yTW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1502,7 +1502,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Aze-lD-LUd">
                                                 <rect key="frame" x="70" y="417" width="235" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qli-c2-MI2" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qli-c2-MI2" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="235" height="50"/>
                                                         <color key="backgroundColor" red="0.20392156859999999" green="0.19215686269999999" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -1632,7 +1632,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9i-ra-2aM" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9i-ra-2aM" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="240" y="1064" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="cX9-BL-ecq"/>
@@ -1655,7 +1655,7 @@
                                                     <action selector="onCheckBoxTapped:" destination="I9A-pJ-iBd" eventType="touchUpInside" id="aDg-G0-gER"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUU-ZO-aNZ" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUU-ZO-aNZ" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="99.5" y="1154" width="176" height="61"/>
                                                 <color key="backgroundColor" red="0.1357400490045092" green="0.27635041285010803" blue="0.63925682106598991" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -1844,7 +1844,7 @@
         <!--Edit Food Item View Controller-->
         <scene sceneID="VFh-eJ-S8w">
             <objects>
-                <viewController storyboardIdentifier="EDIT_MENU_FOOD" id="ezb-Un-XIy" customClass="EditFoodItemViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EDIT_MENU_FOOD" id="ezb-Un-XIy" customClass="EditFoodItemViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dbW-79-lL8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1938,7 +1938,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="M9u-Zb-qhC">
                                                 <rect key="frame" x="70" y="489" width="235" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-D0-sNz" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLk-D0-sNz" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="235" height="50"/>
                                                         <color key="backgroundColor" red="0.20392156859999999" green="0.19215686269999999" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
@@ -2068,7 +2068,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0k-Cu-XAe" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0k-Cu-XAe" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="240" y="1136" width="40" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="40" id="9Ab-Oc-9Uh"/>
@@ -2091,7 +2091,7 @@
                                                     <action selector="onCheckBoxTapped:" destination="ezb-Un-XIy" eventType="touchUpInside" id="VeQ-ap-wNY"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkI-bw-1OT" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkI-bw-1OT" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="99.5" y="1226" width="176" height="61"/>
                                                 <color key="backgroundColor" red="0.135740049" green="0.27635041290000001" blue="0.63925682110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
@@ -2147,7 +2147,7 @@
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="22" id="bec-rZ-602"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O55-7Q-ik2" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O55-7Q-ik2" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                 <rect key="frame" x="117.5" y="1352" width="140" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="140" id="433-uC-7Ds"/>
@@ -2274,7 +2274,7 @@
         <!--Edit Photos View Controller-->
         <scene sceneID="aH4-84-xR0">
             <objects>
-                <viewController storyboardIdentifier="EDIT_IMAGES" id="RZg-sg-q1x" customClass="EditPhotosViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EDIT_IMAGES" id="RZg-sg-q1x" customClass="EditPhotosViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pC9-Ua-s1b">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2471,7 +2471,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HK0-nw-zdP">
                                                         <rect key="frame" x="0.0" y="0.0" width="64" height="100"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgd-rp-zuf" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zgd-rp-zuf" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="70"/>
                                                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" image="plus" catalog="system">
@@ -2508,7 +2508,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXW-1O-cDg">
                                                         <rect key="frame" x="74" y="0.0" width="63.5" height="100"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyq-8c-ai7" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyq-8c-ai7" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="63.5" height="70"/>
                                                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" image="plus" catalog="system">
@@ -2545,7 +2545,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FTr-7C-glI">
                                                         <rect key="frame" x="147.5" y="0.0" width="64" height="100"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-eM-rS8" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-eM-rS8" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="70"/>
                                                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" image="plus" catalog="system">
@@ -2582,7 +2582,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NfR-MI-WIn">
                                                         <rect key="frame" x="221.5" y="0.0" width="63.5" height="100"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grL-pw-Ymb" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grL-pw-Ymb" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="63.5" height="70"/>
                                                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" image="plus" catalog="system">
@@ -2619,7 +2619,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y8w-Gw-oc2">
                                                         <rect key="frame" x="295" y="0.0" width="64" height="100"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeI-xC-7DC" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZeI-xC-7DC" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="70"/>
                                                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" image="plus" catalog="system">
@@ -2689,7 +2689,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="cg9-ZQ-bVY">
                                                 <rect key="frame" x="10" y="645" width="355" height="175"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFF-Q0-FLL" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AFF-Q0-FLL" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="167.5" height="175"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Yu-sB-9HG">
@@ -2732,7 +2732,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIq-eX-uXg" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xIq-eX-uXg" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="187.5" y="0.0" width="167.5" height="175"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 02" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cju-ay-4hW">
@@ -2785,7 +2785,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="PTy-ti-KOx">
                                                 <rect key="frame" x="10" y="905" width="355" height="175"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vr-dF-UNx" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9vr-dF-UNx" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="167.5" height="175"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 03" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77F-mz-Yb1">
@@ -2828,7 +2828,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNv-v2-qd4" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNv-v2-qd4" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="187.5" y="0.0" width="167.5" height="175"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 04" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HV1-4N-0HR">
@@ -2949,7 +2949,7 @@
         <!--Try1 View Controller-->
         <scene sceneID="Lio-hE-Kqu">
             <objects>
-                <viewController storyboardIdentifier="HOME" id="5tv-3U-kUX" customClass="Try_1_ViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HOME" id="5tv-3U-kUX" customClass="Try_1_ViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i95-oJ-X7L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2958,7 +2958,7 @@
                                 <rect key="frame" x="0.0" y="134" width="375" height="484"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="downCell1" rowHeight="127" id="DWY-5X-9vW" customClass="RestaurantTableViewCell" customModule="Cafe__Nibm" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="downCell1" rowHeight="127" id="DWY-5X-9vW" customClass="RestaurantTableViewCell" customModule="Cafe__Manager" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="127"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="DWY-5X-9vW" id="nba-6Y-hiO">
@@ -3090,7 +3090,7 @@
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AW7-rA-GgJ">
                                                             <rect key="frame" x="256.5" y="0.0" width="118.5" height="127"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWb-hP-8yO" customClass="RoundLabel" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10%" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWb-hP-8yO" customClass="RoundLabel" customModule="Cafe__Manager" customModuleProvider="target">
                                                                     <rect key="frame" x="81" y="8" width="29" height="29"/>
                                                                     <color key="backgroundColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                     <constraints>
@@ -3151,7 +3151,7 @@
                                                         <constraint firstItem="4hs-ff-hKR" firstAttribute="height" secondItem="Cc1-JP-a3T" secondAttribute="height" id="gsT-qW-CPI"/>
                                                     </constraints>
                                                 </stackView>
-                                                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACh-t2-bsa" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACh-t2-bsa" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="5" width="20" height="117"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NOFOOD" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-pN-xJ8">
@@ -3258,7 +3258,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3j-sR-kCX">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGG-SK-mBu" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGG-SK-mBu" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="50"/>
                                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.34685359589041098" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Preview">
@@ -3268,7 +3268,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNs-1Q-B4R" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jNs-1Q-B4R" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="125" y="0.0" width="125" height="50"/>
                                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.34685359589041098" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Category +">
@@ -3281,7 +3281,7 @@
                                                             <action selector="onCategory:" destination="5tv-3U-kUX" eventType="touchUpInside" id="Gp3-Jv-42W"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8I-SC-Mac" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G8I-SC-Mac" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="250" y="0.0" width="125" height="50"/>
                                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.34685359589041098" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Menu +">
@@ -3360,7 +3360,7 @@
         <!--Admin Orders View Controller-->
         <scene sceneID="BVH-jd-BVl">
             <objects>
-                <viewController id="c3b-5g-84G" customClass="AdminOrdersViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="c3b-5g-84G" customClass="AdminOrdersViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xcu-48-Vbz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3421,7 +3421,7 @@
                                                     <constraint firstAttribute="height" constant="328" id="n6n-5W-hkI"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NEW_ORDERS" rowHeight="163" id="cyM-As-Tco" customClass="NewOrderTableViewCell" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NEW_ORDERS" rowHeight="163" id="cyM-As-Tco" customClass="NewOrderTableViewCell" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="375" height="163"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cyM-As-Tco" id="Zq0-jw-1f4">
@@ -3587,7 +3587,7 @@
                                                     <constraint firstAttribute="height" constant="328" id="seQ-TF-zUl"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="READY_ORDERS" rowHeight="165" id="Yqh-kF-FCx" customClass="ReadyOrderTableViewCell" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="READY_ORDERS" rowHeight="165" id="Yqh-kF-FCx" customClass="ReadyOrderTableViewCell" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="375" height="165"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yqh-kF-FCx" id="sbY-aO-bb3">
@@ -3760,7 +3760,7 @@
                                                     <constraint firstAttribute="height" constant="328" id="VAO-my-koI"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PROCESSING_ORDERS" rowHeight="152" id="4pc-ms-9y1" customClass="ProcessingOrderTableViewCell" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PROCESSING_ORDERS" rowHeight="152" id="4pc-ms-9y1" customClass="ProcessingOrderTableViewCell" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="375" height="152"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4pc-ms-9y1" id="u6t-g5-rcx">
@@ -3799,7 +3799,7 @@
                                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Pa-D8-QLs">
                                                                     <rect key="frame" x="250" y="36" width="115" height="80"/>
                                                                     <subviews>
-                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYQ-Zn-wru" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYQ-Zn-wru" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                                             <rect key="frame" x="20" y="0.0" width="75" height="80"/>
                                                                             <color key="backgroundColor" red="0.37585263324873097" green="0.1401595079863843" blue="0.34983933069071738" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <constraints>
@@ -3818,7 +3818,7 @@
                                                                                 <action selector="handleSelection:" destination="4pc-ms-9y1" eventType="touchUpInside" id="dgg-9e-7po"/>
                                                                             </connections>
                                                                         </button>
-                                                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKz-lg-EC4" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IKz-lg-EC4" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                                             <rect key="frame" x="20" y="0.0" width="75" height="80"/>
                                                                             <color key="backgroundColor" red="0.023341871889842249" green="0.27006662436548223" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <constraints>
@@ -3937,7 +3937,7 @@
         <!--Order Details View Controller-->
         <scene sceneID="r6s-ZQ-9P2">
             <objects>
-                <viewController storyboardIdentifier="ORDER_DETAIL" id="hnU-Cw-8MT" customClass="OrderDetailsViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ORDER_DETAIL" id="hnU-Cw-8MT" customClass="OrderDetailsViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y28-cr-vfe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -3955,7 +3955,7 @@
                                                     <constraint firstAttribute="height" constant="291" id="XhR-LR-hdn"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ORDER_DETAIL_CELL" rowHeight="152" id="owY-7t-YKu" customClass="OrderDetailTableViewCell" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ORDER_DETAIL_CELL" rowHeight="152" id="owY-7t-YKu" customClass="OrderDetailTableViewCell" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="375" height="152"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="owY-7t-YKu" id="lqk-R1-nEx">
@@ -4088,7 +4088,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Vpu-bq-yId">
                                                 <rect key="frame" x="20" y="455" width="335" height="135"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbk-hD-J1t" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hbk-hD-J1t" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="152.5" height="135"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nw2-vN-RWK">
@@ -4136,7 +4136,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvi-rR-TSG" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvi-rR-TSG" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="182.5" y="0.0" width="152.5" height="135"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 02" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GtS-8w-VDD">
@@ -4194,7 +4194,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="6Wz-uL-yYx">
                                                 <rect key="frame" x="20" y="630" width="335" height="135"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-mW-Yhj" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ntc-mW-Yhj" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="152.5" height="135"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Td-Gn-6hb">
@@ -4242,7 +4242,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNr-KG-HgQ" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNr-KG-HgQ" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="182.5" y="0.0" width="152.5" height="135"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 02" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOK-SH-bw4">
@@ -4466,36 +4466,36 @@
         <!--ACCOUNT-->
         <scene sceneID="XmN-8w-UqA">
             <objects>
-                <viewController id="ky0-hb-5c6" customClass="AdminAcountViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ky0-hb-5c6" customClass="AdminAcountViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H0x-Ok-Zuy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jdp-am-UKE">
-                                <rect key="frame" x="0.0" y="144" width="320" height="287"/>
+                                <rect key="frame" x="0.0" y="144" width="375" height="474"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="unp-Nd-wel">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="800"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p8W-hI-z6b">
-                                                <rect key="frame" x="0.0" y="10" width="320" height="330"/>
+                                                <rect key="frame" x="0.0" y="10" width="375" height="330"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="330" id="B3S-cQ-A0y"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ACCOUNT_CELL" rowHeight="186" id="8VZ-Em-RAD" customClass="AdminAccountTableViewCell" customModule="Cafe__Nibm" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="28" width="320" height="186"/>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ACCOUNT_CELL" rowHeight="186" id="8VZ-Em-RAD" customClass="AdminAccountTableViewCell" customModule="Cafe__Manager" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="28" width="375" height="186"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8VZ-Em-RAD" id="5KG-GG-dN9">
-                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="186"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8t-dO-dis">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mFA-0d-6eZ">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                                             <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4507,10 +4507,10 @@
                                                                     </constraints>
                                                                 </stackView>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="666-63-7TD">
-                                                                    <rect key="frame" x="0.0" y="50" width="320" height="50"/>
+                                                                    <rect key="frame" x="0.0" y="50" width="375" height="50"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="10T-1n-jQ1">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
                                                                             <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <nil key="textColor"/>
@@ -4542,15 +4542,15 @@
                                                 </connections>
                                             </tableView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PGT-sw-DfP">
-                                                <rect key="frame" x="2" y="390" width="316" height="45"/>
+                                                <rect key="frame" x="2" y="390" width="371" height="45"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="02/01/2021" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uxx-ux-CQF">
-                                                        <rect key="frame" x="0.0" y="0.0" width="158" height="45"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="185.5" height="45"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="23/05/2022" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xgX-Gd-lQN">
-                                                        <rect key="frame" x="158" y="0.0" width="158" height="45"/>
+                                                        <rect key="frame" x="185.5" y="0.0" width="185.5" height="45"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
@@ -4562,16 +4562,16 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mKy-Zt-jMp">
-                                                <rect key="frame" x="10" y="445" width="300" height="40"/>
+                                                <rect key="frame" x="10" y="445" width="355" height="40"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02/04/2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YjA-CE-kEm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="150" height="40"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="177.5" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/21/2023" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xh-G5-QpP">
-                                                        <rect key="frame" x="150" y="0.0" width="150" height="40"/>
+                                                        <rect key="frame" x="177.5" y="0.0" width="177.5" height="40"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -4584,7 +4584,7 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FILTER YOUR ORDERS BY DATE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4A-Q3-SAy">
-                                                <rect key="frame" x="0.0" y="340" width="320" height="21"/>
+                                                <rect key="frame" x="0.0" y="340" width="375" height="21"/>
                                                 <color key="backgroundColor" red="0.0" green="0.45006692360714678" blue="0.76746906725888331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="db6-s3-Mpt"/>
@@ -4594,17 +4594,17 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dh-cY-dXU">
-                                                <rect key="frame" x="0.0" y="361" width="320" height="29"/>
+                                                <rect key="frame" x="0.0" y="361" width="375" height="29"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FROM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ttA-hR-kaE">
-                                                        <rect key="frame" x="0.0" y="0.0" width="160" height="29"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="29"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A25-IZ-dVP">
-                                                        <rect key="frame" x="160" y="0.0" width="160" height="29"/>
+                                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="29"/>
                                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="14"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4647,7 +4647,7 @@
                                     <constraint firstItem="unp-Nd-wel" firstAttribute="leading" secondItem="jdp-am-UKE" secondAttribute="leading" id="xDL-Rj-kRk"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYM-SE-SoI" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TYM-SE-SoI" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                 <rect key="frame" x="5" y="74" width="143" height="62"/>
                                 <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -4668,7 +4668,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hNg-sw-Um8">
-                                <rect key="frame" x="201" y="44" width="119" height="64"/>
+                                <rect key="frame" x="256" y="44" width="119" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="OzF-al-pXW"/>
                                     <constraint firstAttribute="width" constant="119" id="QLB-d7-AQF"/>
@@ -4710,7 +4710,7 @@
         <!--Home Tab View Controller-->
         <scene sceneID="GbG-qz-58q">
             <objects>
-                <tabBarController storyboardIdentifier="HOME_TAB" automaticallyAdjustsScrollViewInsets="NO" id="wX4-B3-1Lk" customClass="Home_Tab_ViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HOME_TAB" automaticallyAdjustsScrollViewInsets="NO" id="wX4-B3-1Lk" customClass="Home_Tab_ViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="7MW-SF-2Gj"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3dA-Nx-Z0P">
@@ -4731,7 +4731,7 @@
         <!--Onboarding View Controller-->
         <scene sceneID="bgU-ej-4eb">
             <objects>
-                <viewController id="G3l-cm-vDB" customClass="OnboardingViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G3l-cm-vDB" customClass="OnboardingViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5tK-kE-YyT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -4773,7 +4773,7 @@
         <!--No Network View Controller-->
         <scene sceneID="6gi-ro-1JW">
             <objects>
-                <viewController storyboardIdentifier="NO_NETWORK" id="KSa-MI-VtS" customClass="NoNetworkViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NO_NETWORK" id="KSa-MI-VtS" customClass="NoNetworkViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rdE-JM-e2r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5003,7 +5003,7 @@
         <!--Add New Collection Images View Controller-->
         <scene sceneID="bn8-qN-00M">
             <objects>
-                <viewController storyboardIdentifier="ADD_NEW_IMAGES" id="Klh-E4-UDq" customClass="AddNewCollectionImagesViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ADD_NEW_IMAGES" id="Klh-E4-UDq" customClass="AddNewCollectionImagesViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V44-od-ZNW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5200,7 +5200,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M9s-Fw-HVW">
                                                         <rect key="frame" x="0.0" y="0.0" width="64" height="100"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFN-dr-nio" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFN-dr-nio" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="70"/>
                                                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" image="plus" catalog="system">
@@ -5237,7 +5237,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9yM-dU-ys8">
                                                         <rect key="frame" x="74" y="0.0" width="63.5" height="100"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBe-cS-Htq" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBe-cS-Htq" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="63.5" height="70"/>
                                                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" image="plus" catalog="system">
@@ -5274,7 +5274,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zjn-3a-LSf">
                                                         <rect key="frame" x="147.5" y="0.0" width="64" height="100"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIC-2v-8ct" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fIC-2v-8ct" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="70"/>
                                                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" image="plus" catalog="system">
@@ -5311,7 +5311,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfD-6D-Ll0">
                                                         <rect key="frame" x="221.5" y="0.0" width="63.5" height="100"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ks-l3-siU" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ks-l3-siU" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="63.5" height="70"/>
                                                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" image="plus" catalog="system">
@@ -5348,7 +5348,7 @@
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iz2-ho-2E2">
                                                         <rect key="frame" x="295" y="0.0" width="64" height="100"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fe-3T-DGy" customClass="RoundButton" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2fe-3T-DGy" customClass="RoundButton" customModule="Cafe__Manager" customModuleProvider="target">
                                                                 <rect key="frame" x="0.0" y="0.0" width="64" height="70"/>
                                                                 <color key="tintColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <state key="normal" image="plus" catalog="system">
@@ -5418,7 +5418,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Zhu-KW-dNw">
                                                 <rect key="frame" x="10" y="645" width="355" height="175"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwf-xZ-8jG" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fwf-xZ-8jG" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="167.5" height="175"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkh-4g-fKE">
@@ -5461,7 +5461,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1e-v4-Vko" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1e-v4-Vko" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="187.5" y="0.0" width="167.5" height="175"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 02" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zsw-ho-E6K">
@@ -5514,7 +5514,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pv5-3p-0Eg">
                                                 <rect key="frame" x="10" y="905" width="355" height="175"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bF5-0W-7Zu" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bF5-0W-7Zu" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="167.5" height="175"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 03" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Edq-gg-FC3">
@@ -5557,7 +5557,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isHorizontal" value="NO"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qn-XE-NDG" customClass="GradientView" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9qn-XE-NDG" customClass="GradientView" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="187.5" y="0.0" width="167.5" height="175"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STEP 04" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbX-V7-S3A">
@@ -5770,7 +5770,7 @@
         <!--History Order Detail View Controller-->
         <scene sceneID="4v3-aC-7S0">
             <objects>
-                <viewController storyboardIdentifier="History_ORDER_DETAIL" id="3kg-5d-HBF" customClass="HistoryOrderDetailViewController" customModule="Cafe__Nibm" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="History_ORDER_DETAIL" id="3kg-5d-HBF" customClass="HistoryOrderDetailViewController" customModule="Cafe__Manager" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XOj-N2-0fy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -5788,7 +5788,7 @@
                                                     <constraint firstAttribute="height" constant="400" id="rwM-4Z-Zst"/>
                                                 </constraints>
                                                 <prototypes>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="History_ORDER_DETAIL_CELL" rowHeight="152" id="yGC-9E-2wB" customClass="HistoryOrderDetailTableViewCell" customModule="Cafe__Nibm" customModuleProvider="target">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="History_ORDER_DETAIL_CELL" rowHeight="152" id="yGC-9E-2wB" customClass="HistoryOrderDetailTableViewCell" customModule="Cafe__Manager" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="28" width="375" height="152"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yGC-9E-2wB" id="lsj-tB-SFB">

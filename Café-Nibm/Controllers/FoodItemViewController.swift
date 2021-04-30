@@ -70,6 +70,23 @@ class FoodItemViewController: UIViewController {
              super.viewDidLoad()
             
             
+            if NetworkMonitor.shared.isConnected == false {
+                      
+                      print("No network")
+                      
+                      let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                                                                       let VC1 = storyBoard.instantiateViewController(withIdentifier: "NO_NETWORK") as! NoNetworkViewController
+                                                 
+                                     
+                                     
+                                     
+
+                                                                         
+                                            
+                                            self.navigationController?.pushViewController(VC1, animated: true)
+                  }
+                  
+            
             let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 44))
             view.addSubview(navBar)
 

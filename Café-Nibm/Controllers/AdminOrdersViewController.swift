@@ -524,6 +524,24 @@ class AdminOrdersViewController:  UIViewController , UITableViewDelegate , UITab
         super.viewDidLoad()
         
         
+        if NetworkMonitor.shared.isConnected == false {
+                  
+                  print("No network")
+                  
+                  let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                                                                   let VC1 = storyBoard.instantiateViewController(withIdentifier: "NO_NETWORK") as! NoNetworkViewController
+                                             
+                                 
+                                 
+                                 
+
+                                                                     
+                                        
+                                        self.navigationController?.pushViewController(VC1, animated: true)
+              }
+              
+        
+        
         
         
                                               /*

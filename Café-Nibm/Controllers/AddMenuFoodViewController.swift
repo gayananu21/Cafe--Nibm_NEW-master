@@ -103,13 +103,23 @@ class AddMenuFoodViewController: UIViewController, UIImagePickerControllerDelega
         super.viewDidLoad()
         
         
-        
-        /*
-                                             // MARK: - Check New Order Arriving status using Coredata.)
+    if NetworkMonitor.shared.isConnected == false {
+              
+              print("No network")
+              
+              let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                                                               let VC1 = storyBoard.instantiateViewController(withIdentifier: "NO_NETWORK") as! NoNetworkViewController
+                                         
+                             
+                             
+                             
 
-                                             // In here we are checking core data for New Order Arriving status. If a new order arrived we giving a local notification to manager.If he is not in the order screen.
-                                            
-                                             */
+                                                                 
+                                    
+                                    self.navigationController?.pushViewController(VC1, animated: true)
+          }
+          
+        
         
           //As we know that container is set up in the AppDelegates so we need to refer that container.
                 guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
