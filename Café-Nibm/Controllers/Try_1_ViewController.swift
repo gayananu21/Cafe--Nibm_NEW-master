@@ -220,10 +220,10 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
               cell.foodDescription.text = food.description
               cell.foodPrice.text = String(food.price!)
              
-             cell.foodImage.kf.indicatorType = .activity
-             cell.foodImage.kf.setImage(with: URL(string:String(food.foodImage ?? "")), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
+              cell.foodImage.kf.indicatorType = .activity
+              cell.foodImage.kf.setImage(with: URL(string:String(food.foodImage ?? "")), placeholder: nil, options: [.transition(.fade(0.7))], progressBlock: nil)
              
-            cell.foodImage.heightAnchor.constraint(equalToConstant: 127).isActive = true
+              cell.foodImage.heightAnchor.constraint(equalToConstant: 127).isActive = true
              
              
         
@@ -271,7 +271,7 @@ class Try_1_ViewController: UIViewController , UITableViewDelegate , UITableView
        loadingLottie()
        
         //getting a reference to the node artists
-        refGetOrderInfo = Database.database().reference().child("order status");
+       refGetOrderInfo = Database.database().reference().child("order status");
        
         
        

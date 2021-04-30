@@ -156,7 +156,7 @@
 		9B3FDB7C2630AF6900ABD480 /* No Ready.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "No Ready.json"; sourceTree = "<group>"; };
 		9B4291642638E36400A7BD47 /* FoodItemViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodItemViewController.swift; path = ../FoodItemViewController.swift; sourceTree = "<group>"; };
 		9B4291752638FB9E00A7BD47 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Spinner.swift; path = ../Spinner.swift; sourceTree = "<group>"; };
-		9B43BBBF25E36D8E0039D5E2 /* Café-Nibm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Café-Nibm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B43BBBF25E36D8E0039D5E2 /* Café-Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Café-Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B43BBC225E36D8E0039D5E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B43BBC425E36D8E0039D5E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9B43BBC925E36D8E0039D5E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -437,7 +437,7 @@
 		9B43BBC025E36D8E0039D5E2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B43BBBF25E36D8E0039D5E2 /* Café-Nibm.app */,
+				9B43BBBF25E36D8E0039D5E2 /* Café-Manager.app */,
 				9B43BBD525E36D950039D5E2 /* Café-NibmTests.xctest */,
 				9BBA98B52636FECA008A298A /* Café-NibmUITests.xctest */,
 			);
@@ -603,7 +603,7 @@
 			);
 			name = "Café-Nibm";
 			productName = "Café-Nibm";
-			productReference = 9B43BBBF25E36D8E0039D5E2 /* Café-Nibm.app */;
+			productReference = 9B43BBBF25E36D8E0039D5E2 /* Café-Manager.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9B43BBD425E36D950039D5E2 /* Café-NibmTests */ = {
@@ -1115,7 +1115,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gayan.Cafe--Nibm-12-00";
-				PRODUCT_NAME = "Café-Nibm";
+				PRODUCT_NAME = "Café-Manager";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1135,7 +1135,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gayan.Cafe--Nibm-12-00";
-				PRODUCT_NAME = "Café-Nibm";
+				PRODUCT_NAME = "Café-Manager";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

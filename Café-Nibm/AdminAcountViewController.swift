@@ -31,9 +31,9 @@ class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableV
     var refCarts: DatabaseReference!
     var refDates: DatabaseReference!
        
-        var cartList = [AdminAccountModel]()
+    var cartList = [AdminAccountModel]()
     
-      var appDelegate = UIApplication.shared.delegate as? AppDelegate
+    var appDelegate = UIApplication.shared.delegate as? AppDelegate
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
            print("you tap on \(indexPath.row)")
@@ -43,11 +43,11 @@ class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableV
                  
                    let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
                    let VC1 = storyBoard.instantiateViewController(withIdentifier: "History_ORDER_DETAIL") as! HistoryOrderDetailViewController
-                                // the artist object
+                                // the order object
                                              //the artist obj
                     
                     
-                             //the artist object
+                             //the order object
                              let cart: AdminAccountModel
                              
                              //getting the artist of selected position
@@ -99,22 +99,16 @@ class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableV
               
             
               
-              //the artist object
-              let cart: AdminAccountModel
-           //getting the artist of selected position
+              //the order object
+             let cart: AdminAccountModel
+           //getting the order of selected position
                   cart = cartList[indexPath.row]
               
              
               //adding values to labels
           
               cell.orderId.text = cart.orderId
-           //cell.amount.text = cart.amount
-            
-            //self.total += Int(cell.amount.text ?? "0") ?? 0
-            
-            //self.totalAmount.text = String("Rs. \(self.total)")
-          
-              
+           
               
               
               //returning cell
@@ -151,12 +145,7 @@ class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableV
            
 
         
-          // let dateStringFix = dateFormatter.date(from: dateString)
-           
-
-
-       // self.totalAmount.text = ""
-        self.total = 0
+           self.total = 0
            
            startText.text = dateString
            startLabel.text = dateString
@@ -164,19 +153,15 @@ class AdminAcountViewController: UIViewController, UITableViewDelegate, UITableV
            
            self.view.endEditing(true)
            
-           //getting a reference to the node artists
+           //getting a reference to the node orders history
                  refCarts = Database.database().reference().child("History Account");
                                  
-                                 //observing the data changes
-                                     // refCarts.observe(DataEventType.value, with: { (snapshot) in
-                                          
-                // query_process.observe(.value, with: { snapshot in
+                   //filtering snapshot
                  let query_process = refCarts.queryOrdered(byChild: "date")
-                                   //           query_process.observe(DataEventType.value, with: { (snapshot) in
+                                 
                         
                         query_process.observe(DataEventType.value, with: { snapshot in
-                     //query_process.ob
-                                         
+                   
                                           //if the reference have some values
                                           if snapshot.childrenCount > 0 {
                                             

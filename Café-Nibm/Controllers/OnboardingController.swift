@@ -19,7 +19,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
        
     
-    
+     // MARK: - Animating view with Lottie views.
     
     let lottieView = AnimationView()
     let lottieView1 = AnimationView()
@@ -63,6 +63,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         super.didReceiveMemoryWarning()
     }
 
+     // MARK: - Creating on boarding views/sliders
     
     func createSlides() -> [Slide] {
 
@@ -249,7 +250,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         } 
     }
     
-    
+     // MARK: - Checking scroll view did scrol
     
     
     func scrollView(_ scrollView: UIScrollView, didScrollToPercentageOffset percentageHorizontalOffset: CGFloat) {
