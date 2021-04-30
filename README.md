@@ -23,7 +23,7 @@
 <p align="left"> <u><h3>Order Detail Screen View </h3></u> </p><br>
 <img src="https://user-images.githubusercontent.com/77487432/116723070-ba74c680-a9fc-11eb-8f21-103aa5077281.png"  alt="Landscape View" width="400"><br>
 <h3>References</h3>
-<P> Course Work Video file: https://drive.google.com/file/d/186vq8_CB8mxiQmYi_0kFSSIbXEzKlBfE/view?usp=sharing </p>
+<P> Course Work Video file: https://drive.google.com/file/d/1vWCnqb6CVEE7IPqJ9-SBppTS1wBN6cpE/view?usp=sharing </p>
 <P> Course Work Screenshots file: https://drive.google.com/drive/folders/1DuXNfPLWCDEQqCFUMZN-B08G8Rc1DmyF?usp=sharing </p>
 
 
