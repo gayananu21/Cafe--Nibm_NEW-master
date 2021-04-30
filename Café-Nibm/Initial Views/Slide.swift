@@ -14,7 +14,7 @@ class Slide: UIView {
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
-        let setViewController = mainStoryboard.instantiateViewController(withIdentifier: "LOGIN_NAV") as! LoginScreenViewController
+        let setViewController = mainStoryboard.instantiateViewController(withIdentifier: "LOGIN") as! LoginScreenViewController
         
         
         let rootViewController = self.window!.rootViewController

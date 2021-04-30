@@ -883,6 +883,16 @@ extension AdminOrdersViewController: newOrderDelegate {
     
     func onRejectOrder(Index: Int) {
         
+        
+        let cart: NewOrderModel
+                        
+                        //getting the artist of selected position
+                        cart = cartList[Index]
+             let CusUserId = cart.userId
+             let CusOrderId = cart.orderId
+             let CusKey = cart.dataKey
+        
+        
         let alert = UIAlertController(title: "Reject Order", message: "Do you want to reject order?", preferredStyle: .alert)
                    alert.addAction(UIAlertAction(title: "cancel", style: .default, handler: { action in
                                                                    
@@ -931,9 +941,9 @@ extension AdminOrdersViewController: newOrderDelegate {
                                                                                                                                          let customerName = cartObject?["name"]
                                                                                                                                           let distance = cartObject?["distance"]
                                                                                                                                         
-                                                                                                          var orderkey = ""
+                                                                                                      var orderkey = ""
                                                                                                          
-                                                                                                         orderkey = orderId as! String
+                                                                                                       orderkey = orderId as! String
                                                                                                        var cusKey = ""
                                                                                                        cusKey = userId as! String
                                                                                                                                        
@@ -944,11 +954,11 @@ extension AdminOrdersViewController: newOrderDelegate {
                                                                                                                                      
                                                                                                                                        
                                                                                                                         
-                                                                                                                ref.child("myOrder/\(cusKey)/\(orderkey)").setValue(nil)
+                                                                                                                                        ref.child("myOrder/\(CusUserId ?? "")/\(CusOrderId ?? "")").setValue(nil)
                                                                                                                                        
-                                                                                                                                       ref.child("order status/\(cusDatakey)").setValue(nil)
+                                                                                                                                        ref.child("order status/\(CusKey ?? "")").setValue(nil)
                                                                                                                                         
-                                                                    self.cartList.remove(at: Index)
+                                                                   // self.cartList.remove(at: Index)
                                                                                         
                                                                                                                                         self.noOrders.text = String(self.cartList.count );                                                                    self.newOrdersTableView.reloadData()
                                                                                                                
@@ -982,11 +992,11 @@ extension AdminOrdersViewController: newOrderDelegate {
                      
                     self.refRejectMessage = Database.database().reference()
                     
-                    if(userIdString == cusKey){
+                    if(userIdString == CusUserId ?? ""){
                         
                         self.noRejectKey = "false"
                         
-                                               self.refRejectMessage.child("reject messages/\(keyRejectString)").setValue([ "userId": "\(cusKey)", "message":  self.message, "key": "\(keyRejectString)" ])
+                        self.refRejectMessage.child("reject messages/\(keyRejectString)").setValue([ "userId": "\(CusUserId ?? "")", "message":  self.message, "key": "\(keyRejectString)" ])
                     }
                     
                     else{
@@ -1012,7 +1022,7 @@ extension AdminOrdersViewController: newOrderDelegate {
                       
                                                                                                     
                        //adding the artist inside the generated unique key
-                                                                                                                self.refNewrejmessage.child("reject messages/\(key ?? "")").setValue([ "userId": "\(cusKey)", "message":  self.message, "key": "\(key ?? "")" ])
+                                                                                                                self.refNewrejmessage.child("reject messages/\(key ?? "")").setValue([ "userId": "\(CusUserId ?? "")", "message":  self.message, "key": "\(key ?? "")" ])
                                                         
 
                                                                                                                 
@@ -1028,7 +1038,7 @@ extension AdminOrdersViewController: newOrderDelegate {
                                                                                                              
                                                                                                                                                                                            
                                                                                                               //adding the artist inside the generated unique key
-                                                                                                                                                                                                       self.refNewrejmessage.child("reject messages/\(key ?? "")").setValue([ "userId": "\(cusKey)", "message":  self.message, "key": "\(key ?? "")" ])
+                                                                                                                                                                                                       self.refNewrejmessage.child("reject messages/\(key ?? "")").setValue([ "userId": "\(CusUserId ?? "")", "message":  self.message, "key": "\(key ?? "")" ])
                                                                                                                                                                                  
                                                                                                           }
                                                                                                           })
